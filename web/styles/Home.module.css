@@ -36,7 +36,7 @@
 }
 
 .title a {
-  color: #0070f3;
+  color: #0b5694;
   text-decoration: none;
 }
 
@@ -111,7 +111,8 @@
 }
 
 .logo {
-  height: 1em;
+  font-size: 20px;
+  color: #0b5694;
 }
 
 @media (max-width: 600px) {
