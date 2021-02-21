@@ -55,6 +55,7 @@
 .title,
 .description {
   text-align: center;
+  word-break: break-word;
 }
 
 .description {
