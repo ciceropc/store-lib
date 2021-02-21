@@ -49,26 +49,6 @@ const Home: React.FC = () => {
             <p>Instale nosso programa de acesso remoto</p>
           </a>
 
-          <Link href="/store">
-            <a className={styles.card}>
-              <h3>Loja</h3>
-              <p>
-                Acesse a nossa loja e confira as melhores opções para você e sua
-                empresa!
-              </p>
-            </a>
-          </Link>
-
-          <Link href="/blog">
-            <a className={styles.card}>
-              <h3>Blog </h3>
-              <p>
-                Aprenda mais sobre tecnologia e como ela pode beneficiar seu
-                negócio
-              </p>
-            </a>
-          </Link>
-
           <Link href="/about">
             <a className={styles.card}>
               <h3>Quem somos nós? </h3>
