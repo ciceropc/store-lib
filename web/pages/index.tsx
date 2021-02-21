@@ -37,7 +37,7 @@ const Home: React.FC = () => {
           No momento você está acessando
           <code className={styles.code}>site_em_construção.html</code>
           <br />
-          Estamos trabalhando para melhor atende-lo
+          Estamos trabalhando para melhor atendê-lo
         </p>
 
         <div className={styles.grid}>
@@ -59,12 +59,8 @@ const Home: React.FC = () => {
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://www.google.com/search?ei=BoowYKPTOZHE5OUP_LqXmAU&q=programmatore+translation&oq=programmatori+transl&gs_lcp=Cgdnd3Mtd2l6EAMYADIGCAAQFhAeMgYIABAWEB46BwgAELADEEM6CQgAELADEAcQHjoECAAQEzoICAAQDRAeEBM6CAgAEBYQHhATOgoIABAWEAoQHhATOggIABANEAUQHjoICAAQCBANEB5Q1zhYvVtg7XZoBXAAeACAAaQBiAHCCZIBAzAuOZgBAKABAaoBB2d3cy13aXrIAQrAAQE&sclient=gws-wiz"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          &reg; Programmatori 2021
+        <a>
+          &reg; InfoTech 2021
         </a>
       </footer>
     </div>
