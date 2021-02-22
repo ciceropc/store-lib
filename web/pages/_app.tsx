@@ -3,6 +3,7 @@ import { version } from "../package.json";
 import { AppProps } from 'next/app'
 
 import '../styles/globals.css'
+import styles from '../styles/Home.module.css'
 
 const App = ({ Component, pageProps }) => ( 
   <>
@@ -26,6 +27,10 @@ const App = ({ Component, pageProps }) => (
       <link rel="icon" href="/favicon.ico" />
     </Head> 
     <Component { ...pageProps }/> 
+
+      <footer className={styles.footer}>
+        <a>&reg; InfoTech 2021</a>
+      </footer>
   </>
 );
 
