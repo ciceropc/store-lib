@@ -43,12 +43,6 @@ const Home: React.FC = () => {
           </Link>
         </div>
       </main>
-
-      <footer className={styles.footer}>
-        <a>
-          &reg; InfoTech 2021
-        </a>
-      </footer>
     </div>
   )
 }
