@@ -20,7 +20,22 @@ const About: React.FC = () => {
           ?
         </h1>
 
-        <p className={styles.description}>Somos uma empresa...</p>
+        <p className={styles.description}>
+          A INFOASSIST TI é uma empresa de gestão de tecnologia da informação
+          focada em entender as necessidades e problemas do negócio do cliente
+          para oferecer soluções tecnológicas que, de forma segura e produtiva,
+          os auxilie no alcance de seus objetivos.
+        </p>
+        <p className={styles.description}>
+          Desenvolvemos projetos de reestruturação e implantação para tornar sua
+          TI inteligente, segura e proativa. Temos a expertise necessária para
+          desenvolver soluções que aumentem a competitividade dos nossos
+          clientes.
+        </p>
+        <p className={styles.description}>
+          Nossa missão é cuidar da tecnologia para que, com o melhor
+          custo-benefício, o cliente foque o próprio negócio.
+        </p>
 
         <div className={styles.grid}>
           <a
