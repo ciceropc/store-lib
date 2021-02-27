@@ -39,7 +39,7 @@ const About: React.FC = () => {
 
         <div className={styles.grid}>
           <a
-            href="https://infoassist.com.br/Infoassist%20-%20Suporte%20Remoto.zip"
+            href="https://suporte.infoassist.com.br/Infoassist%20-%20Suporte%20Remoto.zip"
             className={styles.card}
           >
             <h3>Suporte Remoto </h3>
