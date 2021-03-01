@@ -38,10 +38,7 @@ const About: React.FC = () => {
         </p>
 
         <div className={styles.grid}>
-          <a
-            href="https://suporte.infoassist.com.br/anydesk.exe"
-            className={styles.card}
-          >
+          <a href="http://remoto.infoassist.com.br/" className={styles.card}>
             <h3>Suporte Remoto </h3>
             <p>Instale nosso programa de acesso remoto</p>
           </a>

@@ -18,19 +18,14 @@ const Home: React.FC = () => {
             <a>InfoAssist!</a>
           </Link>
         </h1>
-
         <p className={styles.description}>
           No momento você está acessando
           <code className={styles.code}>site_em_construção.html</code>
           <br />
           Estamos trabalhando para melhor atendê-lo
         </p>
-
         <div className={styles.grid}>
-          <a
-            href="https://infoassist.com.br/Infoassist%20-%20Suporte%20Remoto.zip"
-            className={styles.card}
-          >
+          <a href="http://remoto.infoassist.com.br/" className={styles.card}>
             <h3>Suporte Remoto </h3>
             <p>Instale nosso programa de acesso remoto</p>
           </a>
