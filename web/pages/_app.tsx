@@ -2,6 +2,7 @@ import ThemeContainer from '../contexts/theme/ThemeContainer'
 
 import { Flex, Grid, List, ListItem } from '@chakra-ui/core'
 import MainMenu from '../components/menu/MainMenu'
+import LogoSVG from '../public/LogoSVG'
 
 export default function App({ Component, pageProps }) {
   return (
@@ -13,11 +14,11 @@ export default function App({ Component, pageProps }) {
         templateColumns="1fr"
         templateRows="100px 200px 1fr 250px"
         templateAreas="
-            'MainMenu'
-            'ImageBackground'
-            'Content'
-            'Footer'
-          "
+          'MainMenu'
+          'ImageBackground'
+          'Content'
+          'Footer'
+        "
       >
         <MainMenu gridArea="MainMenu" paddingX="10%" />
         <Flex
