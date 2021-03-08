@@ -20,6 +20,7 @@
   },
   "include": [
     "next-env.d.ts",
+    ".env.local",
     "**/*.ts",
     "**/*.tsx"
 , "pages/_app.tsx"  ],
