@@ -23,12 +23,15 @@ export default function About(): JSX.Element {
   return (
     <Flex flex="1" direction="column" paddingX="10%" paddingBottom="8">
       <Text textAlign="justify" paddingY="8" lineHeight="2">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-        fermentum lorem vitae lacus congue, id pretium orci pretium. Cras at
-        congue justo. Morbi laoreet orci vitae cursus commodo. Suspendisse
-        potenti. Curabitur fermentum lorem vitae lacus congue, id pretium orci
-        pretium. Cras at congue justo. Morbi laoreet orci vitae cursus commodo.
-        Suspendisse potenti.
+        A INFOASSIST TI é uma empresa de gestão de tecnologia da informação
+        focada em entender as necessidades e problemas do negócio do cliente
+        para oferecer soluções tecnológicas que, de forma segura e produtiva, os
+        auxilie no alcance de seus objetivos. Desenvolvemos projetos de
+        reestruturação e implantação para tornar sua TI inteligente, segura e
+        proativa. Temos a expertise necessária para desenvolver soluções que
+        aumentem a competitividade dos nossos clientes. Nossa missão é cuidar da
+        tecnologia para que, com o melhor custo-benefício, o cliente foque o
+        próprio negócio.
       </Text>
       <Grid
         columnGap="8"
@@ -193,15 +196,6 @@ export default function About(): JSX.Element {
           </Flex>
         </Link>
       </Grid>
-      <Text textAlign="justify" paddingY="8" lineHeight="2">
-        Vestibulum maximus pulvinar purus at vehicula. Duis quis massa eu massa
-        tincidunt luctus vitae sit amet turpis. Duis aliquam dolor lacinia ex
-        eleifend ullamcorper. Curabitur sed accumsan neque, in vestibulum odio.
-        Integer gravida mi nibh, id congue libero pretium nec. Curabitur dictum
-        enim eget felis pretium vulputate. Quisque lectus quam, congue eu lacus.
-        Duis aliquam dolor lacinia ex eleifend ullamcorper. Curabitur sed
-        accumsan neque, in vestibulum odio.
-      </Text>
     </Flex>
   )
 }
