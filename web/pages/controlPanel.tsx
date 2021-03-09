@@ -1,8 +1,7 @@
 // eslint-disable-next-line no-use-before-define
 
 import { Button, Flex, Grid, Input, Text, Textarea } from '@chakra-ui/core'
-
-export default function Contact(): JSX.Element {
+export default function ControlPanel(): JSX.Element {
   return (
     <Flex flex="1" direction="column" paddingX="10%">
       <Text textAlign="justify" paddingY="8" lineHeight="2">

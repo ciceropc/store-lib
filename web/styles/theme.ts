@@ -4,6 +4,12 @@ const infoAssistTheme: DefaultTheme = {
   colors: {
     ...theme.colors,
     black: '#080708',
+    blackAlpha: {
+      ...theme.colors.blue,
+      300: '#08070855',
+      500: '#08070899',
+      800: '#080708bb'
+    },
     blue: {
       ...theme.colors.blue,
       300: '#1285e2',

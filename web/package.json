@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@chakra-ui/color-mode": "^1.1.1",
     "@chakra-ui/core": "^0.8.0",
     "@emotion/core": "^10.0.35",
     "@emotion/styled": "^10.0.27",
