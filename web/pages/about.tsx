@@ -22,7 +22,7 @@ export default function About(): JSX.Element {
   const paddingTop = '6'
   return (
     <Flex flex="1" direction="column" paddingX="10%" paddingBottom="8">
-      <Text textAlign="justify" paddingY="8" lineHeight="2">
+      <Text textAlign="justify" paddingY="8" lineHeight="2" fontSize="lg">
         A INFOASSIST TI é uma empresa de gestão de tecnologia da informação
         focada em entender as necessidades e problemas do negócio do cliente
         para oferecer soluções tecnológicas que, de forma segura e produtiva, os
@@ -36,8 +36,8 @@ export default function About(): JSX.Element {
       <Grid
         columnGap="8"
         rowGap="8"
-        templateColumns="1fr 1fr"
-        templateRows="1fr 1fr"
+        templateColumns="1fr 1fr 1fr 1fr "
+        templateRows="1fr"
       >
         <Link
           backgroundColor={backgroundColorDefault}
@@ -131,8 +131,8 @@ export default function About(): JSX.Element {
           <Flex textAlign="justify" direction="column" alignItems={alignment}>
             <Avatar
               size={avatarSize}
-              name="Fernando Donini"
-              src="https://instagram.fpoa13-1.fna.fbcdn.net/v/t51.2885-19/s320x320/158880158_452485882857878_8906126037026577171_n.jpg?tp=1&_nc_ht=instagram.fpoa13-1.fna.fbcdn.net&_nc_ohc=ajJ7jf9DXE8AX_HudQX&oh=a13db33f213fc635211b487ad0826136&oe=6070FEAB"
+              name="Francisco Donini"
+              src="https://instagram.fpoa13-1.fna.fbcdn.net/v/t51.2885-19/s320x320/131936168_665506880786988_1251286919158526979_n.jpg?tp=1&_nc_ht=instagram.fpoa13-1.fna.fbcdn.net&_nc_ohc=_JaGXsMKX18AX8h6lJM&oh=cb0fd7da7e3c0e50d3627c05d6911639&oe=60715563"
             />
             <List
               spacing={listSpacing}
@@ -141,7 +141,7 @@ export default function About(): JSX.Element {
             >
               <ListItem>
                 <Heading size={headingFontSize} textAlign={alignment}>
-                  Fernando Donini
+                  Francisco Donini
                 </Heading>
               </ListItem>
               <ListItem textAlign={alignment}>
@@ -170,8 +170,8 @@ export default function About(): JSX.Element {
           <Flex textAlign="justify" direction="column" alignItems={alignment}>
             <Avatar
               size={avatarSize}
-              name="Francisco Donini"
-              src="https://instagram.fpoa13-1.fna.fbcdn.net/v/t51.2885-19/s320x320/131936168_665506880786988_1251286919158526979_n.jpg?tp=1&_nc_ht=instagram.fpoa13-1.fna.fbcdn.net&_nc_ohc=_JaGXsMKX18AX8h6lJM&oh=cb0fd7da7e3c0e50d3627c05d6911639&oe=60715563"
+              name="Fernando Donini"
+              src="https://instagram.fpoa13-1.fna.fbcdn.net/v/t51.2885-19/s320x320/158880158_452485882857878_8906126037026577171_n.jpg?tp=1&_nc_ht=instagram.fpoa13-1.fna.fbcdn.net&_nc_ohc=ajJ7jf9DXE8AX_HudQX&oh=a13db33f213fc635211b487ad0826136&oe=6070FEAB"
             />
             <List
               spacing={listSpacing}
@@ -180,7 +180,7 @@ export default function About(): JSX.Element {
             >
               <ListItem>
                 <Heading size={headingFontSize} textAlign={alignment}>
-                  Francisco Donini
+                  Fernando Donini
                 </Heading>
               </ListItem>
               <ListItem textAlign={alignment}>

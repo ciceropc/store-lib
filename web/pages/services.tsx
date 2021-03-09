@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Stack, Text } from '@chakra-ui/core'
+import { Flex, Text } from '@chakra-ui/core'
 
 export default function Services(): JSX.Element {
   return (

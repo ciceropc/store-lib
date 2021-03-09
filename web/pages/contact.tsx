@@ -4,7 +4,7 @@ import { Button, Flex, Grid, Input, Text, Textarea } from '@chakra-ui/core'
 
 export default function Contact(): JSX.Element {
   return (
-    <Flex flex="1" direction="column" paddingX="10%">
+    <Flex flex="1" direction="column" paddingX="10%" paddingY="8">
       <Text textAlign="justify" paddingY="8" lineHeight="2">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
         fermentum lorem vitae lacus congue, id pretium orci pretium. Cras at
