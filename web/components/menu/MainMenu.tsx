@@ -1,5 +1,8 @@
-import { Flex, Link } from '@chakra-ui/core'
+import { Flex, Icon, Link } from '@chakra-ui/core'
+import { IconDownload } from '../../assets/Icons'
+import ActionButton from '../../components/ActionButton'
 import MenuButton from '../../components/menu/MenuButton'
+
 import LogoSVG from '../../public/LogoSVG'
 
 export default function MainMenu({ gridArea, paddingX }): JSX.Element {
@@ -10,11 +13,15 @@ export default function MainMenu({ gridArea, paddingX }): JSX.Element {
       </Link>
 
       <Flex flex="1"></Flex>
+
       <Flex flex="1">
         <MenuButton destination="/services" text="Serviços oferecidos" />
         <MenuButton destination="/about" text="Quem somos nós?" />
         <MenuButton destination="/contact" text="Contato" />
-        <MenuButton destination="/contact" text="Área do cliente" />
+        <ActionButton
+          destination="http://remoto.infoassist.com.br/"
+          text="Suporte Remoto"
+        />
       </Flex>
     </Flex>
   )
