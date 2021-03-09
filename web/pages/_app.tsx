@@ -13,24 +13,15 @@ export default function App({ Component, pageProps }) {
         backgroundColor="white"
         fontFamily="body"
         templateColumns="1fr"
-        templateRows="100px 200px 1fr 1fr"
+        templateRows="100px 1fr 650px"
         templateAreas="
           'MainMenu'
-          'ImageBackground'
           'Content'
           'Footer'
         "
       >
         <MainMenu gridArea="MainMenu" paddingX={paddingX} />
-        <Flex
-          backgroundImage="url(https://images.ctfassets.net/jt1652yryijm/33tQ5s0PajQeqgsShlGJZu/2bd705f3d06d8998e00b6be7a49f6b8b/image-1.jpg)"
-          width="100%"
-          height="200px"
-          backgroundPosition="center"
-          backgroundRepeat="no-repeat"
-          backgroundSize="100%"
-        ></Flex>
-        <Flex gridArea="Content" flex="1" paddingX={paddingX} minH="50vh">
+        <Flex gridArea="Content">
           <Component {...pageProps} />
         </Flex>
         <Footer gridArea="Footer" paddingX={paddingX} />

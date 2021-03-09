@@ -10,9 +10,9 @@ export default function MainMenu({ gridArea, paddingX }): JSX.Element {
       </Link>
 
       <Flex flex="1"></Flex>
-      <Flex>
-        <MenuButton destination="/contact" text="Serviços oferecidos" />
-        <MenuButton destination="/contact" text="Quem somos nós?" />
+      <Flex flex="1">
+        <MenuButton destination="/services" text="Serviços oferecidos" />
+        <MenuButton destination="/about" text="Quem somos nós?" />
         <MenuButton destination="/contact" text="Contato" />
         <MenuButton destination="/contact" text="Área do cliente" />
       </Flex>
