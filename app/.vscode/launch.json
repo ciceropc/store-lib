@@ -19,6 +19,9 @@
                 // "--dart-define=VTEX_ACCOUNT_PROD=novomundo",
                 // "--dart-define=VTEX_TOKEN_PROD=SXSIWWXDEFRRGYBKXYOCBXXEIQZETOYMZNAKEFHWOTOONHKKMHSTZBFVANZGXSJPGFSSYRGSRSNIIIRAFPRMVFMXIFKQFAYVKYHIPRLVAACHNXMRWYAIBWUBSUKSGPMQ",
                 // "--dart-define=VTEX_KEY_PROD=vtexappkey-novomundo-YAUVEH",
+                // "--dart-define=VTEX_ACCOUNT_QA=novomundoqa",
+                // "--dart-define=VTEX_TOKEN_QA=XWXYBDRNBCDCCUZVKNOHFRPCKIADUZKUAPLWAUUCEOJEOZBFCWIABUBGGVNSDNSBRIBNJDUPTMCQILOLHUBYRKTGOFPEGBYRVHMGXNWZBSHORKXVHCLILUKGOUZENQJR",
+                // "--dart-define=VTEX_KEY_QA=vtexappkey-novomundoqa-DDEWDA"
             ],
         },
         {
@@ -33,6 +36,9 @@
                 // "--dart-define=CONTENTFUL_TOKEN=TmHZCy6s1x8RjbL53MSkKaMr0goJHfHi0eU5a_qv3dE",
                 // "--dart-define=CONTENTFUL_SPACE_ID=q0s6znoij7tu",
                 // "--dart-define=VTEX_ENV=vtexcommercestable",
+                // "--dart-define=VTEX_ACCOUNT_PROD=novomundo",
+                // "--dart-define=VTEX_TOKEN_PROD=SXSIWWXDEFRRGYBKXYOCBXXEIQZETOYMZNAKEFHWOTOONHKKMHSTZBFVANZGXSJPGFSSYRGSRSNIIIRAFPRMVFMXIFKQFAYVKYHIPRLVAACHNXMRWYAIBWUBSUKSGPMQ",
+                // "--dart-define=VTEX_KEY_PROD=vtexappkey-novomundo-YAUVEH",
                 // "--dart-define=VTEX_ACCOUNT_QA=novomundoqa",
                 // "--dart-define=VTEX_TOKEN_QA=XWXYBDRNBCDCCUZVKNOHFRPCKIADUZKUAPLWAUUCEOJEOZBFCWIABUBGGVNSDNSBRIBNJDUPTMCQILOLHUBYRKTGOFPEGBYRVHMGXNWZBSHORKXVHCLILUKGOUZENQJR",
                 // "--dart-define=VTEX_KEY_QA=vtexappkey-novomundoqa-DDEWDA"

@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:io';
 
-import 'package:firebase_messaging/firebase_messaging.dart';
+// import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:get/get.dart';
 import 'package:logging/logging.dart';
@@ -21,7 +21,7 @@ class NotificationService extends GetxService {
   );
 
   final FlutterLocalNotificationsPlugin _flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
-  final FirebaseMessaging _firebaseMessaging = FirebaseMessaging();
+  // final FirebaseMessaging _firebaseMessaging = FirebaseMessaging();
 
   StreamSubscription _subscription;
 
@@ -44,32 +44,32 @@ class NotificationService extends GetxService {
         .resolvePlatformSpecificImplementation<AndroidFlutterLocalNotificationsPlugin>()
         ?.createNotificationChannel(_channel);
 
-    _firebaseMessaging.configure(
-      onMessage: (Map<String, dynamic> message) async {
-        Logging().logger.log(Level.INFO, 'Firebase Messaging - onMessage: $message');
+    // _firebaseMessaging.configure(
+    //   onMessage: (Map<String, dynamic> message) async {
+    //     Logging().logger.log(Level.INFO, 'Firebase Messaging - onMessage: $message');
 
-        Map pushNotification = await _parseNotificationMap(message);
+    //     Map pushNotification = await _parseNotificationMap(message);
 
-        showNotificationSnackBar(
-          pushNotification['id'],
-          pushNotification['title'],
-          pushNotification['body'],
-          pushNotification['destination'],
-        );
-      },
-      onLaunch: (Map<String, dynamic> message) async {
-        Logging().logger.log(Level.INFO, 'Firebase Messaging - onLaunch: $message');
-        _redirectFromNotification(message);
-      },
-      onResume: (Map<String, dynamic> message) async {
-        Logging().logger.log(Level.INFO, 'Firebase Messaging - onResume: $message');
-        _redirectFromNotification(message);
-      },
-    );
+    //     showNotificationSnackBar(
+    //       pushNotification['id'],
+    //       pushNotification['title'],
+    //       pushNotification['body'],
+    //       pushNotification['destination'],
+    //     );
+    //   },
+    //   onLaunch: (Map<String, dynamic> message) async {
+    //     Logging().logger.log(Level.INFO, 'Firebase Messaging - onLaunch: $message');
+    //     _redirectFromNotification(message);
+    //   },
+    //   onResume: (Map<String, dynamic> message) async {
+    //     Logging().logger.log(Level.INFO, 'Firebase Messaging - onResume: $message');
+    //     _redirectFromNotification(message);
+    //   },
+    // );
 
-    await _firebaseMessaging.requestNotificationPermissions();
+    // await _firebaseMessaging.requestNotificationPermissions();
 
-    token.value = await _firebaseMessaging.getToken();
+    // token.value = await _firebaseMessaging.getToken();
 
     Logging().logger.log(Level.INFO, 'Firebase Messaging - token: $token');
 
@@ -105,7 +105,7 @@ class NotificationService extends GetxService {
     return isNotificationPermissionEnabled.value = statusNotification == PermissionStatus.granted;
   }
 
-  Future<String> getToken() => _firebaseMessaging.getToken();
+  // Future<String> getToken() => _firebaseMessaging.getToken();
 
   Future _onSelectLocalNotification(String payload) async {
     Logging().logger.info(payload);
@@ -115,7 +115,7 @@ class NotificationService extends GetxService {
     Logging().logger.log(Level.INFO, 'Registering Token Listener: $listener');
 
     removeTokenRefreshListener();
-    _subscription = _firebaseMessaging.onTokenRefresh.listen(listener);
+    // _subscription = _firebaseMessaging.onTokenRefresh.listen(listener);
   }
 
   void removeTokenRefreshListener() {

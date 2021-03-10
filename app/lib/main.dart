@@ -13,8 +13,8 @@ import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'package:firebase_analytics/firebase_analytics.dart';
-import 'package:firebase_analytics/observer.dart';
+// import 'package:firebase_analytics/firebase_analytics.dart';
+// import 'package:firebase_analytics/observer.dart';
 
 import 'package:app/app_config.dart';
 import 'package:app/routes/app_routes.dart';
@@ -40,7 +40,7 @@ Future<void> _getInitialRoute() async {
 
 Future<void> mainCommon(AppConfig appConfig) async {
   WidgetsFlutterBinding.ensureInitialized();
-  await _getInitialRoute();
+  // await _getInitialRoute();
 
   LicenseRegistry.addLicense(() async* {
     final license = await rootBundle.loadString('fonts/montserrat/OFL.txt');
@@ -66,11 +66,11 @@ Future<void> mainCommon(AppConfig appConfig) async {
   // TODO: CONFIGURE CMS
 
   // Init Firebase
-  await Firebase.initializeApp();
+  // await Firebase.initializeApp();
 
   // Firebase Instance
-  FirebaseAnalytics analytics = FirebaseAnalytics();
-  Get.put(analytics, tag: 'analytics');
+  // FirebaseAnalytics analytics = FirebaseAnalytics();
+  // Get.put(analytics, tag: 'analytics');
 
   // Notification Service
   // Get.put(NotificationService());

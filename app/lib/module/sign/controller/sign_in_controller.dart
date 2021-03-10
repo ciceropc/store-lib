@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 import 'package:app/routes/app_routes.dart';
 import 'package:app/shared_widgets/widget/snack_bar.dart';
 import 'package:app/theme/app_theme.dart';
-import 'package:app/util/firebase_analytics.dart';
+//import 'package:app/util/firebase_analytics.dart';
 
 class SignInController extends GetxController {
   final email = ''.obs;
@@ -35,7 +35,7 @@ class SignInController extends GetxController {
       if (response.authStatus == 'InvalidEmail' || response.authStatus == 'WrongCredentials') {
         errorMessage.value = 'Usuário ou senha inválidos.';
         errorPasswordMessage.value = 'Usuário ou senha inválidos.';
-        FirebaseAnalyticsService.logError('perfil', 'login');
+        //FirebaseAnalyticsService.logError('perfil', 'login');
       } else if (response.authStatus == 'BlockedUser') {
         showGenericSnackBar(SvgPicture.asset('assets/icons/lock.svg', width: 24, height: 24, color: primaryColor),
             'Você ultrapassou o limite de tentativas de login. Aguarde uma hora para acessar novamente.',

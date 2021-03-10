@@ -10,7 +10,7 @@ import 'package:app/routes/app_routes.dart';
 import 'package:app/shared_widgets/components/primary_button.dart';
 import 'package:app/shared_widgets/components/secondary_button.dart';
 import 'package:app/theme/app_theme.dart';
-import 'package:app/util/firebase_analytics.dart';
+//import 'package:app/util/firebase_analytics.dart';
 
 // ignore: must_be_immutable
 class ChooseSignPage extends GetView<ProfileController> {
@@ -45,7 +45,7 @@ class ChooseSignPage extends GetView<ProfileController> {
     return [
       PrimaryButton(
         onTap: () {
-          FirebaseAnalyticsService.logClick('perfil', 'cadastrar_conta');
+          //FirebaseAnalyticsService.logClick('perfil', 'cadastrar_conta');
           Get.toNamed(Routes.SIGN_UP);
         },
         text: 'Cadastrar conta',
@@ -53,7 +53,7 @@ class ChooseSignPage extends GetView<ProfileController> {
       SizedBox(height: 8),
       PrimaryButton(
         onTap: () {
-          FirebaseAnalyticsService.logClick('perfil', 'entrar_email');
+          //FirebaseAnalyticsService.logClick('perfil', 'entrar_email');
           if (argument == 'fromCart') {
             Get.offNamed(Routes.SIGN_IN, arguments: 'fromCart');
           } else {

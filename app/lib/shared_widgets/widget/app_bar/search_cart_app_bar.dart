@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 import 'package:app/routes/app_routes.dart';
 import 'package:app/theme/app_theme.dart';
 import 'package:app/theme/icons/app_icons.dart';
-import 'package:app/util/firebase_analytics.dart';
+//import 'package:app/util/firebase_analytics.dart';
 
 class SearchCartAppBar extends StatelessWidget {
   final Widget body;
@@ -31,7 +31,7 @@ class SearchCartAppBar extends StatelessWidget {
                 Expanded(
                   child: GestureDetector(
                     onTap: () {
-                      FirebaseAnalyticsService.logClick(fromPage, 'barra_de_busca');
+                      //FirebaseAnalyticsService.logClick(fromPage, 'barra_de_busca');
                     },
                     child: Container(
                       height: 35,

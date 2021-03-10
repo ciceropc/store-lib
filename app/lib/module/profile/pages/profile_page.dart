@@ -7,20 +7,19 @@ import 'package:app/module/profile/controller/profile_controller.dart';
 import 'package:app/module/profile/pages/choose_sign_page.dart';
 import 'package:app/module/profile/personal_informations/bindings/personal_informations_binding.dart';
 import 'package:app/module/profile/personal_informations/pages/personal_informations_page.dart';
-import 'package:app/module/review/controller/review_controller.dart';
+
 import 'package:app/routes/app_routes.dart';
 import 'package:app/shared_widgets/components/destructive_button.dart';
 import 'package:app/shared_widgets/components/list_button.dart';
-import 'package:app/shared_widgets/components/review_popup.dart';
 import 'package:app/shared_widgets/components/secondary_button.dart';
 import 'package:app/shared_widgets/widget/loading.dart';
 import 'package:app/shared_widgets/widget/popup.dart';
 import 'package:app/theme/app_theme.dart';
 import 'package:app/theme/icons/app_icons.dart';
-import 'package:app/util/firebase_analytics.dart';
+//import 'package:app/util/firebase_analytics.dart';
 
 class ProfilePage extends GetView<ProfileController> {
-  final ReviewController reviewController = Get.find();
+  // final ReviewController reviewController = Get.find();
 
   @override
   Widget build(BuildContext context) {
@@ -72,7 +71,7 @@ class ProfilePage extends GetView<ProfileController> {
                     ListButton(
                         title: 'Informações pessoais',
                         onTap: () {
-                          FirebaseAnalyticsService.logClick('perfil', 'informações_pessoais');
+                          //FirebaseAnalyticsService.logClick('perfil', 'informações_pessoais');
                           Get.to(PersonalInformationsPage(), binding: PersonalInformationsBindings());
                         },
                         leadingPathSvg: 'assets/icons/person_outline.svg'),
@@ -80,7 +79,7 @@ class ProfilePage extends GetView<ProfileController> {
                     ListButton(
                         title: 'Alterar senha',
                         onTap: () {
-                          FirebaseAnalyticsService.logClick('perfil', 'alterar_senha');
+                          //FirebaseAnalyticsService.logClick('perfil', 'alterar_senha');
                           Get.toNamed(Routes.RESET_PASSWORD);
                         },
                         leadingPathSvg: 'assets/icons/lock.svg'),
@@ -88,7 +87,7 @@ class ProfilePage extends GetView<ProfileController> {
                     ListButton(
                       title: 'Endereços cadastrados',
                       onTap: () {
-                        FirebaseAnalyticsService.logClick('perfil', 'endereços_cadastrados');
+                        //FirebaseAnalyticsService.logClick('perfil', 'endereços_cadastrados');
                         Get.toNamed(Routes.USER_ADDRESS);
                       },
                       leadingPathSvg: 'assets/icons/pin-outline.svg',
@@ -106,19 +105,10 @@ class ProfilePage extends GetView<ProfileController> {
                     ListButton(
                       title: 'Notificações',
                       onTap: () {
-                        FirebaseAnalyticsService.logClick('perfil', 'notificações');
+                        //FirebaseAnalyticsService.logClick('perfil', 'notificações');
                         Get.toNamed(Routes.NOTIFICATION_HISTORY);
                       },
                       leadingPathSvg: 'assets/icons/notifications.svg',
-                    ),
-                    SizedBox(height: 10),
-                    ListButton(
-                      title: 'Avalie o app',
-                      onTap: () {
-                        FirebaseAnalyticsService.logClick('perfil', 'avalie_app');
-                        ReviewPopup.showReviewDialog();
-                      },
-                      leading: AppIcons.star_outline,
                     ),
                     SizedBox(height: 24),
                     SecondaryButton(
@@ -126,7 +116,7 @@ class ProfilePage extends GetView<ProfileController> {
                         actions: [
                           DestructiveButton(
                             onTap: () {
-                              FirebaseAnalyticsService.logClick('perfil', 'sair');
+                              //FirebaseAnalyticsService.logClick('perfil', 'sair');
                               controller.unassignUser();
                               Get.close(0);
                             },

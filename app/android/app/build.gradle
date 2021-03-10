@@ -38,11 +38,12 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "com.example.app"
-        minSdkVersion 16
-        targetSdkVersion 29
+        applicationId "com.donini.app"
+        minSdkVersion 21
+        targetSdkVersion 28
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
+        multiDexEnabled true
     }
 
     buildTypes {
@@ -52,6 +53,15 @@ android {
             signingConfig signingConfigs.debug
         }
     }
+    flavorDimensions "app"
+
+    productFlavors {
+        dev {
+            applicationIdSuffix ".dev"
+        }
+        master {
+        }
+    }
 }
 
 flutter {
@@ -59,5 +69,10 @@ flutter {
 }
 
 dependencies {
+    implementation platform('com.google.firebase:firebase-bom:26.0.0')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.android.gms:play-services-vision:20.1.1'
+    implementation 'com.google.android.gms:play-services-vision-common:19.1.1'
+    implementation 'com.google.android.gms:play-services-vision-image-label:18.0.5'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }

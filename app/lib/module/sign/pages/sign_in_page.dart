@@ -13,7 +13,7 @@ import 'package:app/shared_widgets/components/primary_button.dart';
 import 'package:app/shared_widgets/components/secondary_button.dart';
 import 'package:app/shared_widgets/widget/app_bar/label_app_bar.dart';
 import 'package:app/theme/app_theme.dart';
-import 'package:app/util/firebase_analytics.dart';
+//import 'package:app/util/firebase_analytics.dart';
 import 'package:app/util/validators.dart';
 
 class SignInPage extends GetView<SignInController> {
@@ -90,7 +90,7 @@ class SignInPage extends GetView<SignInController> {
             SizedBox(height: 16),
             SecondaryButton(
               onTap: () {
-                FirebaseAnalyticsService.logClick('perfil', 'esqueceu_senha');
+                //FirebaseAnalyticsService.logClick('perfil', 'esqueceu_senha');
                 Get.toNamed(Routes.FORGOT_PASSWORD_EMAIL, arguments: controller.email.value);
               },
               text: 'Esqueceu a senha?',
