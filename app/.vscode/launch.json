@@ -1,0 +1,42 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "MASTER",
+            "program": "lib/main_master.dart",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--flavor",
+                "master",
+                // "--dart-define=CONTENTFUL_ENV=master",
+                // "--dart-define=CONTENTFUL_TOKEN=TmHZCy6s1x8RjbL53MSkKaMr0goJHfHi0eU5a_qv3dE",
+                // "--dart-define=CONTENTFUL_SPACE_ID=q0s6znoij7tu",
+                // "--dart-define=VTEX_ENV=vtexcommercestable",
+                // "--dart-define=VTEX_ACCOUNT_PROD=novomundo",
+                // "--dart-define=VTEX_TOKEN_PROD=SXSIWWXDEFRRGYBKXYOCBXXEIQZETOYMZNAKEFHWOTOONHKKMHSTZBFVANZGXSJPGFSSYRGSRSNIIIRAFPRMVFMXIFKQFAYVKYHIPRLVAACHNXMRWYAIBWUBSUKSGPMQ",
+                // "--dart-define=VTEX_KEY_PROD=vtexappkey-novomundo-YAUVEH",
+            ],
+        },
+        {
+            "name": "DEVELOPMENT",
+            "program": "lib/main_development.dart",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--flavor",
+                "dev",
+                // "--dart-define=CONTENTFUL_ENV=master",
+                // "--dart-define=CONTENTFUL_TOKEN=TmHZCy6s1x8RjbL53MSkKaMr0goJHfHi0eU5a_qv3dE",
+                // "--dart-define=CONTENTFUL_SPACE_ID=q0s6znoij7tu",
+                // "--dart-define=VTEX_ENV=vtexcommercestable",
+                // "--dart-define=VTEX_ACCOUNT_QA=novomundoqa",
+                // "--dart-define=VTEX_TOKEN_QA=XWXYBDRNBCDCCUZVKNOHFRPCKIADUZKUAPLWAUUCEOJEOZBFCWIABUBGGVNSDNSBRIBNJDUPTMCQILOLHUBYRKTGOFPEGBYRVHMGXNWZBSHORKXVHCLILUKGOUZENQJR",
+                // "--dart-define=VTEX_KEY_QA=vtexappkey-novomundoqa-DDEWDA"
+            ],
+        }
+    ]
+}
