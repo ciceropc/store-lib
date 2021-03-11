@@ -1,20 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
-class LoadingNV extends StatelessWidget {
+class LoadingAnimatedIcon extends StatelessWidget {
   final bool isLoading;
   final double size;
   final bool setWhite;
 
-  const LoadingNV({this.isLoading: true, this.size = 70.0, this.setWhite: false});
+  const LoadingAnimatedIcon({this.isLoading: true, this.size = 70.0, this.setWhite: false});
   @override
   Widget build(BuildContext context) {
     return Visibility(
         visible: isLoading,
-        child: Lottie.asset(
-            setWhite ? 'assets/anim/loader_branco_nv.json' : 'assets/anim/loader_azul_nv.json',
-            width: size,
-            height: size));
+        child: Lottie.asset(setWhite ? 'assets/anim/loader_branco_nv.json' : 'assets/anim/loader_azul_nv.json',
+            width: size, height: size));
   }
 }
 
@@ -32,7 +30,7 @@ void showLoading(BuildContext context) {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                LoadingNV(setWhite: true),
+                LoadingAnimatedIcon(setWhite: true),
               ],
             ),
           ),

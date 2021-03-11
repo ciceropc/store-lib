@@ -182,7 +182,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> with WidgetsBindingObse
                     style: bodyMedium.copyWith(color: textHigh),
                   ),
                   Obx(() => controller.loading.value
-                      ? LoadingNV()
+                      ? LoadingAnimatedIcon()
                       : Switch(
                           materialTapTargetSize: MaterialTapTargetSize.padded,
                           onChanged: (value) {

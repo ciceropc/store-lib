@@ -30,7 +30,7 @@ class SignInErrorPage extends GetView<SignInController> {
     return Obx(
       () => FeedbackScreen.registerError(actions: [
         controller.isLoading.value
-            ? LoadingNV()
+            ? LoadingAnimatedIcon()
             : PrimaryButton(
                 icon: AppIcons.refresh_nv,
                 text: 'Recarregar',

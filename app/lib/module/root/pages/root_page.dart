@@ -61,6 +61,7 @@ class RootPage extends GetView<RootController> {
           body: controller.currentPage,
           bottomNavigationBar: BottomNavigationBar(
             currentIndex: controller.currentIndex.value,
+            backgroundColor: backgroundColor,
             type: BottomNavigationBarType.fixed,
             elevation: 0,
             unselectedItemColor: textLow,

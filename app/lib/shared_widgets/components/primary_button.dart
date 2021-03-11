@@ -15,7 +15,7 @@ class PrimaryButton extends StatelessWidget {
     this.iconSize: 16.0,
     this.spaceIcon: 5.0,
     this.borderRadius: 8.0,
-  })  : backgroundColor = backgroundColor ?? theme.accentColor,
+  })  : backgroundColor = backgroundColor ?? theme.secondaryColor,
         textColor = textColor ?? theme.primaryColor,
         disabledColor = disabledColor ?? theme.accentColor;
 

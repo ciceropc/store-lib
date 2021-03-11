@@ -39,7 +39,7 @@ class SignUpResultPage extends GetView<SignUpController> {
 
   Widget _buildError() {
     return Obx(() => controller.isLoading.value
-        ? Center(child: LoadingNV())
+        ? Center(child: LoadingAnimatedIcon())
         : FeedbackScreen.registerError(actions: [
             PrimaryButton(
               icon: AppIcons.refresh_nv,

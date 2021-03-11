@@ -11,7 +11,7 @@ showLoadingBottomSheet() async {
     GestureDetector(
         child: ModalBottomSheetFixed(
       centerTitle: false,
-      child: Center(child: LoadingNV()),
+      child: Center(child: LoadingAnimatedIcon()),
     )).ignoreTouch(true),
     isScrollControlled: true,
     enableDrag: false,

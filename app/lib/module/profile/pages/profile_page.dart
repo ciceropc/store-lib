@@ -51,7 +51,7 @@ class ProfilePage extends GetView<ProfileController> {
         child: Obx(() {
           return controller.isLoading.value
               ? Center(
-                  child: LoadingNV(
+                  child: LoadingAnimatedIcon(
                     isLoading: controller.isLoading.value,
                   ),
                 )
