@@ -15,3 +15,5 @@ var decorationRoundedWithoutBorder = BoxDecoration(
   borderRadius: BorderRadius.all(Radius.circular(8.0)),
   color: primaryColor,
 );
+
+final bottomNavigationBarHeight = 56;
