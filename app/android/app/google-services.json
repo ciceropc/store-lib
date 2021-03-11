@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "800065186054",
+    "project_id": "store-lib",
+    "storage_bucket": "store-lib.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800065186054:android:1ce6abf07cf0ed7289d687",
+        "android_client_info": {
+          "package_name": "com.donini.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800065186054-cpmip4k5ncm65c0sru982iu1sofp5n82.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChEjNDC3_7rvmYpu6_IXuXegLt3WmimXg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800065186054-cpmip4k5ncm65c0sru982iu1sofp5n82.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
