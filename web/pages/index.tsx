@@ -26,17 +26,3 @@ export default function Home(): JSX.Element {
     </Flex>
   )
 }
-
-// export const getServerSideProps = async () => {
-//   // eslint-disable-next-line @typescript-eslint/no-var-requires
-//   const client = require('contentful').createClient({
-//     space: 'jt1652yryijm',
-//     accessToken: '226bwigj7qger_NzrcHqjbgKNtHocGoZpMTkFkPmfco'
-//   })
-//   const data = await client.getEntries({ content_type: 'post' })
-//   return {
-//     props: {
-//       posts: data.items
-//     }
-//   }
-// }
