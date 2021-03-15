@@ -7,7 +7,15 @@ import LogoSVG from '../../public/LogoSVG'
 
 export default function MainMenu({ gridArea, paddingX }): JSX.Element {
   return (
-    <Flex backgroundColor="blue.500" gridArea={gridArea} paddingX={paddingX}>
+    <Flex
+      backgroundColor="blue.500"
+      gridArea={gridArea}
+      paddingX={paddingX}
+      position="sticky"
+      top={0}
+      transition="height .5s, line-height .5s"
+      zIndex={10}
+    >
       <Link href="/" _hover={{}} paddingY="3">
         <LogoSVG color="white" size="70" />
       </Link>

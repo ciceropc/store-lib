@@ -4,7 +4,7 @@ import { Button, Flex, Grid, Input, Text, Textarea } from '@chakra-ui/core'
 
 export default function Contact(): JSX.Element {
   return (
-    <Flex flex="1" direction="column" paddingX="10%" paddingY="8">
+    <Flex flex="1" paddingX="10%" paddingY="8">
       <Text textAlign="justify" paddingY="8" lineHeight="2">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
         fermentum lorem vitae lacus congue, id pretium orci pretium. Cras at
@@ -16,7 +16,7 @@ export default function Contact(): JSX.Element {
         Curabitur dictum enim eget felis pretium vulputate. Quisque lectus quam,
         congue eu lacus
       </Text>
-      <Flex>
+      <Flex marginLeft="16">
         <Flex flex="1"></Flex>
         <Grid paddingY="8" height="300px" width="420px">
           <Input placeholder="Nome" />
