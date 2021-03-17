@@ -11,7 +11,7 @@ export default function App({ Component, pageProps, props }): JSX.Element {
     <ThemeContainer>
       <Grid
         as="main"
-        backgroundColor="black"
+        backgroundColor="white"
         fontFamily="body"
         templateColumns="100vw"
         templateRows="100px 1fr 280px"
