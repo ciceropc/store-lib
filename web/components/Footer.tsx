@@ -1,4 +1,4 @@
-import { Flex, Heading, List, ListItem } from '@chakra-ui/core'
+import { Flex, Heading, Link, List, ListItem } from '@chakra-ui/core'
 
 export default function Footer({ gridArea, paddingX }): JSX.Element {
   const headingFontSize = 'md'
@@ -18,27 +18,34 @@ export default function Footer({ gridArea, paddingX }): JSX.Element {
       <Flex flex="1" direction="column">
         <List spacing={listSpacing}>
           <ListItem>
-            <Heading size={headingFontSize}>Redes Sociais</Heading>
+            <Link href="http://remoto.infoassist.com.br/">
+              <Heading size={headingFontSize}>Suporte Remoto</Heading>
+            </Link>
           </ListItem>
-          <ListItem>Consectetur adipiscing elit</ListItem>
-          <ListItem>Integer molestie lorem at massa</ListItem>
-          <ListItem>Facilisis in pretium nisl aliquet</ListItem>
         </List>
         <List spacing={listSpacing} paddingTop={paddingTop}>
           <ListItem>
-            <Heading size={headingFontSize}>Contato</Heading>
+            <Link href="about">
+              <Heading size={headingFontSize}>Quem Somos Nós?</Heading>
+            </Link>
           </ListItem>
-          <ListItem>Consectetur adipiscing elit</ListItem>
-          <ListItem>Integer molestie lorem at massa</ListItem>
-          <ListItem>Facilisis in pretium nisl aliquet</ListItem>
         </List>
-        <List spacing={listSpacing} paddingTop={paddingTop}>
+      </Flex>
+
+      <Flex flex="1"></Flex>
+      <Flex flex="2" direction="column">
+        <List spacing={listSpacing}>
           <ListItem>
-            <Heading size={headingFontSize}>Atendimento</Heading>
+            <Link href="services">
+              <Heading size={headingFontSize}>Serviços Oferecidos</Heading>
+            </Link>
           </ListItem>
-          <ListItem>Consectetur adipiscing elit</ListItem>
-          <ListItem>Integer molestie lorem at massa</ListItem>
-          <ListItem>Facilisis in pretium nisl aliquet</ListItem>
+          <ListItem>Consultoria de Tecnologia</ListItem>
+          <ListItem>Prestação de serviços de TI </ListItem>
+          <ListItem>Análise de infraestrutura </ListItem>
+          <ListItem>Padronização de hardware e software</ListItem>
+          <ListItem>Monitoramento em tempo real</ListItem>
+          <ListItem>Serviços de infraestrutura de rede </ListItem>
         </List>
       </Flex>
 
@@ -46,51 +53,18 @@ export default function Footer({ gridArea, paddingX }): JSX.Element {
       <Flex flex="1" direction="column">
         <List spacing={listSpacing}>
           <ListItem>
-            <Heading size={headingFontSize}>Redes Sociais</Heading>
+            <Link href="contact">
+              <Heading size={headingFontSize}>Contato</Heading>
+            </Link>
           </ListItem>
-          <ListItem>Consectetur adipiscing elit</ListItem>
-          <ListItem>Integer molestie lorem at massa</ListItem>
-          <ListItem>Facilisis in pretium nisl aliquet</ListItem>
+          <ListItem>contato@infoassist.com.br</ListItem>
+          <ListItem>(51) 98049-7131</ListItem>
         </List>
         <List spacing={listSpacing} paddingTop={paddingTop}>
           <ListItem>
-            <Heading size={headingFontSize}>Contato</Heading>
+            <Heading size={headingFontSize}>Localização</Heading>
           </ListItem>
-          <ListItem>Consectetur adipiscing elit</ListItem>
-          <ListItem>Integer molestie lorem at massa</ListItem>
-          <ListItem>Facilisis in pretium nisl aliquet</ListItem>
-        </List>
-      </Flex>
-
-      <Flex flex="1"></Flex>
-      <Flex flex="1" direction="column">
-        <List spacing={listSpacing}>
-          <ListItem>
-            <Heading size={headingFontSize}>Redes Sociais</Heading>
-          </ListItem>
-          <ListItem>Consectetur adipiscing elit</ListItem>
-          <ListItem>Integer molestie lorem at massa</ListItem>
-          <ListItem>Facilisis in pretium nisl aliquet</ListItem>
-        </List>
-        <List spacing={listSpacing} paddingTop={paddingTop}>
-          <ListItem>
-            <Heading size={headingFontSize}>Contato</Heading>
-          </ListItem>
-          <ListItem>Consectetur adipiscing elit</ListItem>
-          <ListItem>Integer molestie lorem at massa</ListItem>
-          <ListItem>Facilisis in pretium nisl aliquet</ListItem>
-        </List>
-      </Flex>
-
-      <Flex flex="1"></Flex>
-      <Flex flex="1" direction="column">
-        <List spacing={listSpacing}>
-          <ListItem>
-            <Heading size={headingFontSize}>Atendimento</Heading>
-          </ListItem>
-          <ListItem>Consectetur adipiscing elit</ListItem>
-          <ListItem>Integer molestie lorem at massa</ListItem>
-          <ListItem>Facilisis in pretium nisl aliquet</ListItem>
+          <ListItem>Niterói - Canoas</ListItem>
         </List>
       </Flex>
     </Flex>
