@@ -11,22 +11,22 @@ export default function App({ Component, pageProps, props }): JSX.Element {
     <ThemeContainer>
       <Grid
         as="main"
-        backgroundColor="white"
+        backgroundColor="black"
         fontFamily="body"
-        templateColumns="1fr"
-        templateRows="100px 1fr 650px"
+        templateColumns="100vw"
+        templateRows="100px 1fr 280px"
         templateAreas="
           'MainMenu'
           'Content'
           'Footer'
         "
       >
-        <MainMenu gridArea="MainMenu" paddingX={paddingX} />
-        <Flex gridArea="Content" paddingY={16}>
+        <MainMenu gridArea="MainMenu" paddingX={[2, paddingX]} />
+        <Flex gridArea="Content" flex="1">
           <Heading>{props?.posts} </Heading>
           <Component {...pageProps} />
         </Flex>
-        <Footer gridArea="Footer" paddingX={paddingX} />
+        <Footer gridArea="Footer" paddingX={[2, paddingX]} />
       </Grid>
     </ThemeContainer>
   )

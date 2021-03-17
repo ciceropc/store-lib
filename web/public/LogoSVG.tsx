@@ -19,7 +19,7 @@ export default function LogoSVG({ color, size }) {
       <Flex
         height={size + 'px'}
         paddingLeft="1"
-        width={size * 4 + 'px'}
+        width={size * 2 + 'px'}
         paddingY="6"
       >
         <svg

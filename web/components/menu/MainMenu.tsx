@@ -8,19 +8,27 @@ import LogoSVG from '../../public/LogoSVG'
 export default function MainMenu({ gridArea, paddingX }): JSX.Element {
   return (
     <Flex
-      backgroundColor="blue.500"
+      backgroundColor={[
+        'red.500',
+        'orange.500',
+        'yellow.500',
+        'green.500',
+        'blue.500'
+      ]}
+      direction={['column', 'row']}
       gridArea={gridArea}
       paddingX={paddingX}
-      position="sticky"
+      position={['unset', 'sticky']}
       top={0}
       transition="height .5s, line-height .5s"
       zIndex={10}
+      alignItems={['center', 'auto']}
     >
       <Link href="/" _hover={{}} paddingY="3">
         <LogoSVG color="white" size="70" />
       </Link>
 
-      <Flex flex="1"></Flex>
+      <Flex flex={['0', '1']}></Flex>
 
       <Flex flex="1">
         <MenuButton destination="/services" text="Serviços oferecidos" />

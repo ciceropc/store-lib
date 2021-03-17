@@ -1,9 +1,13 @@
 import { Flex, Link } from '@chakra-ui/core'
 
 interface ActionButtonParameters {
-  text?: string
+  backgroundColor?: string
+  color?: string
   destination?: string
   icon?: JSX.Element
+  hoverBackgroundColor?: string
+  hoverColor?: string
+  text?: string
 }
 
 export default function ActionButton(
@@ -12,14 +16,18 @@ export default function ActionButton(
   function teste() {
     console.log('tapped ' + props.text)
   }
+  const backgroundColor = props.backgroundColor ?? 'white'
+  const color = props.color ?? 'blue.500'
   const iconData = props.icon ?? ''
+  const hoverColor = props.hoverColor ?? 'white'
+  const hoverBackgroundColor = props.hoverBackgroundColor ?? 'green.500'
   return (
     <Flex>
       <Link
-        _hover={{ backgroundColor: 'green.500', color: 'white' }}
-        backgroundColor="white"
+        _hover={{ backgroundColor: hoverBackgroundColor, color: hoverColor }}
+        backgroundColor={backgroundColor}
         borderRadius="md"
-        color="blue.500"
+        color={color}
         fontWeight="bold"
         href={props.destination}
         marginX="4"
