@@ -73,132 +73,148 @@ export default function Home(): JSX.Element {
       </Flex>
       <Flex
         direction="column"
-        backgroundColor="blue.500"
-        color="white"
-        paddingY={paddingY}
-        paddingX={paddingX}
+        backgroundColor="yellow.500"
+        color="gray.800"
+        paddingY="10%"
+        paddingX="10%"
         textAlign="center"
       >
         <Heading marginBottom={12}>
           O que nossos clientes falam sobre nós?
         </Heading>
-        <Flex width="2xl" marginLeft="-10%">
-          <Avatar
-            name=""
-            src="https://thispersondoesnotexist.com/image"
-            size="2xl"
-          />
-          <Box
-            backgroundColor="gray.50"
-            borderRadius="lg"
-            color="black"
-            paddingX={paddingTop}
-            paddingY={paddingTop}
-            marginLeft={6}
-          >
-            <List spacing={listSpacing} alignItems={alignmentStatement}>
-              <ListItem>
-                <Heading size={headingFontSize} textAlign="left">
-                  Marilene Brusco
-                </Heading>
-              </ListItem>
-              <ListItem>
-                <Heading
-                  size={headingFontSize}
-                  fontWeight="thin"
-                  textAlign="left"
-                >
-                  Azevedo Advogados
-                </Heading>
-              </ListItem>
+        <Box paddingY={6} paddingX={6} borderRadius="lg">
+          <Flex>
+            <Flex flex="2">
+              <Avatar
+                name=""
+                src="https://thispersondoesnotexist.com/image"
+                size="xl"
+                marginTop={8}
+              />
+              <Box
+                backgroundColor="blue.500"
+                borderRadius="lg"
+                color="white"
+                paddingX={paddingTop}
+                paddingY={paddingTop}
+                marginLeft={6}
+              >
+                <List spacing={listSpacing} alignItems={alignmentStatement}>
+                  <ListItem>
+                    <Heading size={headingFontSize} textAlign="left">
+                      Marilene Brusco
+                    </Heading>
+                  </ListItem>
+                  <ListItem>
+                    <Heading
+                      size={headingFontSize}
+                      fontWeight="thin"
+                      textAlign="left"
+                    >
+                      Azevedo Advogados
+                    </Heading>
+                  </ListItem>
 
-              <ListItem>
-                <Text fontSize="xl" fontWeight="normal" textAlign="left">
-                  Profissionais competentes e Confiáveis, ótimo atendimento aos
-                  clientes
-                </Text>
-              </ListItem>
-            </List>
-          </Box>{' '}
-        </Flex>
-        <Flex marginTop={10} width="3xl" marginLeft="25%">
-          <Box
-            backgroundColor="gray.50"
-            borderRadius="lg"
-            color="black"
-            paddingX={paddingTop}
-            paddingY={paddingTop}
-            marginRight={6}
-          >
-            <List spacing={listSpacing} alignItems={alignmentStatement}>
-              <ListItem>
-                <Heading size={headingFontSize} textAlign="left">
-                  Lúcia Rockembach
-                </Heading>
-              </ListItem>
-              <ListItem>
-                <Heading
-                  size={headingFontSize}
-                  fontWeight="thin"
-                  textAlign="left"
-                >
-                  Vidal Falcão Advocacia Empresarial
-                </Heading>
-              </ListItem>
+                  <ListItem>
+                    <Text fontSize="xl" fontWeight="normal" textAlign="left">
+                      Profissionais competentes e Confiáveis, ótimo atendimento
+                      aos clientes
+                    </Text>
+                  </ListItem>
+                </List>
+              </Box>
+            </Flex>
+            <Flex flex="1"></Flex>
+          </Flex>
+          <Flex>
+            <Flex flex="1"></Flex>
+            <Flex marginTop={10} flex="2">
+              <Box
+                backgroundColor="blue.500"
+                borderRadius="lg"
+                color="white"
+                paddingX={paddingTop}
+                paddingY={paddingTop}
+                marginRight={6}
+              >
+                <List spacing={listSpacing} alignItems={alignmentStatement}>
+                  <ListItem>
+                    <Heading size={headingFontSize} textAlign="left">
+                      Lúcia Rockembach
+                    </Heading>
+                  </ListItem>
+                  <ListItem>
+                    <Heading
+                      size={headingFontSize}
+                      fontWeight="thin"
+                      textAlign="left"
+                    >
+                      Vidal Falcão Advocacia Empresarial
+                    </Heading>
+                  </ListItem>
 
-              <ListItem>
-                <Text fontSize="xl" fontWeight="normal" textAlign="left">
-                  Sinônimo de confiança, presteza, muita discrição no ambiente
-                  de trabalho e o atendimento personalizado
-                </Text>
-              </ListItem>
-            </List>
-          </Box>
-          <Avatar
-            name=""
-            src="https://thispersondoesnotexist.com/image"
-            size="2xl"
-          />
-        </Flex>
-        <Flex marginTop={10} width="3xl" marginLeft="-10%">
-          <Avatar
-            name=""
-            src="https://thispersondoesnotexist.com/image"
-            size="2xl"
-          />
-          <Box
-            backgroundColor="gray.50"
-            borderRadius="lg"
-            color="black"
-            paddingX={paddingTop}
-            paddingY={paddingTop}
-            marginLeft={6}
-          >
-            <List spacing={listSpacing} alignItems={alignmentStatement}>
-              <ListItem>
-                <Heading size={headingFontSize} textAlign="left">
-                  Yamara Eichner
-                </Heading>
-              </ListItem>
-              <ListItem>
-                <Heading
-                  size={headingFontSize}
-                  fontWeight="thin"
-                  textAlign="left"
-                >
-                  Naturoils
-                </Heading>
-              </ListItem>
+                  <ListItem>
+                    <Text fontSize="xl" fontWeight="normal" textAlign="left">
+                      Sinônimo de confiança, presteza, muita discrição no
+                      ambiente de trabalho e o atendimento personalizado
+                    </Text>
+                  </ListItem>
+                </List>
+              </Box>
+              <Avatar
+                name=""
+                src="https://thispersondoesnotexist.com/image"
+                size="xl"
+                marginTop={8}
+              />
+            </Flex>
+          </Flex>
 
-              <ListItem>
-                <Text fontSize="xl" fontWeight="normal" textAlign="left">
-                  Atendimento personalizado, suporte rápido e eficiente,
-                  discrição e confiabilidade em projetos customizados
-                </Text>
-              </ListItem>
-            </List>
-          </Box>{' '}
-        </Flex>
+          <Flex>
+            <Flex marginTop={10} flex="2">
+              <Avatar
+                name=""
+                src="https://thispersondoesnotexist.com/image"
+                size="xl"
+                marginTop={8}
+              />
+              <Box
+                backgroundColor="blue.500"
+                borderRadius="lg"
+                color="white"
+                paddingX={paddingTop}
+                paddingY={paddingTop}
+                marginLeft={6}
+              >
+                <List spacing={listSpacing} alignItems={alignmentStatement}>
+                  <ListItem>
+                    <Heading size={headingFontSize} textAlign="left">
+                      Yamara Eichner
+                    </Heading>
+                  </ListItem>
+                  <ListItem>
+                    <Heading
+                      size={headingFontSize}
+                      fontWeight="thin"
+                      textAlign="left"
+                    >
+                      Naturoils
+                    </Heading>
+                  </ListItem>
+
+                  <ListItem>
+                    <Text fontSize="xl" fontWeight="normal" textAlign="left">
+                      Atendimento personalizado, suporte rápido e eficiente,
+                      discrição e confiabilidade em projetos customizados
+                    </Text>
+                  </ListItem>
+                </List>
+              </Box>
+            </Flex>
+
+            <Flex flex="1"></Flex>
+          </Flex>
+        </Box>
       </Flex>
     </Flex>
   )
