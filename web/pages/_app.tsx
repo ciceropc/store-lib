@@ -13,7 +13,7 @@ export default function App({ Component, pageProps, props }): JSX.Element {
         backgroundColor="white"
         fontFamily="body"
         templateColumns="1fr"
-        templateRows="100px 1fr 280px"
+        templateRows={['200px 1fr 280px', '100px 1fr 280px']}
         templateAreas="
           'MainMenu'
           'Content'
