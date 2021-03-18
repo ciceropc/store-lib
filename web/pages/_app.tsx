@@ -3,18 +3,30 @@ import ThemeContainer from '../contexts/theme/ThemeContainer'
 import { Flex, Grid, Heading } from '@chakra-ui/react'
 import MainMenu from '../components/menu/MainMenu'
 import Footer from '../components/Footer'
-
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export default function App({ Component, pageProps, props }): JSX.Element {
   const paddingX = '10%'
   return (
     <ThemeContainer>
-      <MainMenu gridArea="MainMenu" paddingX={[2, paddingX]} />
-      <Flex gridArea="Content" flex="1">
-        <Heading>{props?.posts} </Heading>
-        <Component {...pageProps} />
-      </Flex>
-      <Footer gridArea="Footer" paddingX={[2, paddingX]} />
+      <Grid
+        as="main"
+        backgroundColor="white"
+        fontFamily="body"
+        templateColumns="1fr"
+        templateRows="100px 1fr 280px"
+        templateAreas="
+          'MainMenu'
+          'Content'
+          'Footer'
+        "
+      >
+        <MainMenu gridArea="MainMenu" paddingX={[2, paddingX]} />
+        <Flex gridArea="Content" flex="1">
+          <Heading>{props?.posts} </Heading>
+          <Component {...pageProps} />
+        </Flex>
+        <Footer gridArea="Footer" paddingX={[2, paddingX]} />
+      </Grid>
     </ThemeContainer>
   )
 }
