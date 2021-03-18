@@ -1,16 +1,17 @@
 import { Flex, Heading, Link, List, ListItem } from '@chakra-ui/core'
 
 export default function Footer({ gridArea, paddingX }): JSX.Element {
-  const headingFontSize = 'md'
-  const paddingTop = '6'
+  const headingFontSize = ['4xl', 'md']
+  const paddingTop = ['8', '6']
   const listSpacing = '2'
   return (
     <Flex
       backgroundColor="gray.900"
+      direction={['column', 'row']}
       flex="1"
-      fontSize="sm"
+      fontSize={['3xl', 'sm']}
       gridArea={gridArea}
-      paddingX={paddingX}
+      paddingX={[10, paddingX]}
       paddingY="8"
       color="gray.100"
       align="start"
@@ -19,14 +20,14 @@ export default function Footer({ gridArea, paddingX }): JSX.Element {
         <List spacing={listSpacing}>
           <ListItem>
             <Link href="http://remoto.infoassist.com.br/">
-              <Heading size={headingFontSize}>Suporte Remoto</Heading>
+              <Heading fontSize={headingFontSize}>Suporte Remoto</Heading>
             </Link>
           </ListItem>
         </List>
         <List spacing={listSpacing} paddingTop={paddingTop}>
           <ListItem>
             <Link href="about">
-              <Heading size={headingFontSize}>Quem Somos Nós?</Heading>
+              <Heading fontSize={headingFontSize}>Quem Somos Nós?</Heading>
             </Link>
           </ListItem>
         </List>
@@ -37,7 +38,7 @@ export default function Footer({ gridArea, paddingX }): JSX.Element {
         <List spacing={listSpacing}>
           <ListItem>
             <Link href="services">
-              <Heading size={headingFontSize}>Serviços Oferecidos</Heading>
+              <Heading fontSize={headingFontSize}>Serviços Oferecidos</Heading>
             </Link>
           </ListItem>
           <ListItem>Consultoria de Tecnologia</ListItem>
@@ -54,7 +55,7 @@ export default function Footer({ gridArea, paddingX }): JSX.Element {
         <List spacing={listSpacing}>
           <ListItem>
             <Link href="contact">
-              <Heading size={headingFontSize}>Contato</Heading>
+              <Heading fontSize={headingFontSize}>Contato</Heading>
             </Link>
           </ListItem>
           <ListItem>contato@infoassist.com.br</ListItem>
@@ -62,7 +63,7 @@ export default function Footer({ gridArea, paddingX }): JSX.Element {
         </List>
         <List spacing={listSpacing} paddingTop={paddingTop}>
           <ListItem>
-            <Heading size={headingFontSize}>Localização</Heading>
+            <Heading fontSize={headingFontSize}>Localização</Heading>
           </ListItem>
           <ListItem>Niterói - Canoas</ListItem>
         </List>
