@@ -10,6 +10,7 @@ import {
   Text
 } from '@chakra-ui/core'
 import ActionButton from '../components/ActionButton'
+
 export default function Home(): JSX.Element {
   const paddingX = '20%'
   const paddingY = '8%'
@@ -28,8 +29,11 @@ export default function Home(): JSX.Element {
         textAlign="center"
         alignItems="center"
       >
-        <Heading marginBottom={6}> Gestão de Tecnologia da Informação</Heading>
-        <Heading fontSize="xl" fontWeight="normal" marginBottom={6}>
+        <Heading marginBottom={6} fontSize={['6xl', '4xl']}>
+          {' '}
+          Gestão de Tecnologia da Informação
+        </Heading>
+        <Heading fontSize={['4xl', 'xl']} fontWeight="normal" marginBottom={6}>
           Somos uma empresa que transforma o ambiente de tecnologia em
           ferramenta de potencialização de resultados dos nossos clientes
         </Heading>
@@ -37,20 +41,33 @@ export default function Home(): JSX.Element {
           backgroundColor="yellow.500"
           color="gray.800"
           destination="http://www.google.com.br"
+          fontSize={['2xl', 'md']}
           text="Agende uma consultoria"
         />
       </Flex>
       <Flex
         backgroundColor="white.500"
         color="black"
+        direction={['column', 'row']}
         paddingY={paddingY}
         paddingX={paddingX}
         textAlign="center"
       >
-        <Heading paddingLeft={6} marginRight={6} textAlign="right" width="2xl">
+        <Heading
+          paddingLeft={6}
+          marginRight={6}
+          marginBottom={[6, 0]}
+          fontSize={['6xl', '4xl']}
+          textAlign={['center', 'right']}
+          width={['100%', '2xl']}
+        >
           Como fazemos isso?
         </Heading>
-        <Text textAlign="left" fontSize="xl" marginTop={2}>
+        <Text
+          textAlign={['center', 'left']}
+          fontSize={['4xl', 'xl']}
+          marginTop={2}
+        >
           Reduzindo ao máximo os problemas com análise de infraestrutura,
           padronização de hardware e software, e monitoramento em tempo real dos
           recursos físicos dos equipamentos
@@ -64,8 +81,11 @@ export default function Home(): JSX.Element {
         paddingX={paddingX}
         textAlign="center"
       >
-        <Heading marginBottom={6}> O que oferecemos</Heading>
-        <Heading fontSize="xl" fontWeight="normal">
+        <Heading marginBottom={6} fontSize={['6xl', '4xl']}>
+          {' '}
+          O que oferecemos
+        </Heading>
+        <Heading fontSize={['4xl', 'xl']} fontWeight="normal">
           A Infoassist Tecnologia é uma empresa que transforma o ambiente de
           tecnologia em ferramenta de potencialização de resultados dos nossos
           clientes.
@@ -79,12 +99,12 @@ export default function Home(): JSX.Element {
         paddingX="10%"
         textAlign="center"
       >
-        <Heading marginBottom={12}>
+        <Heading marginBottom={12} fontSize={['6xl', '4xl']}>
           O que nossos clientes falam sobre nós?
         </Heading>
         <Box paddingY={6} paddingX={6} borderRadius="lg">
           <Flex>
-            <Flex flex="2">
+            <Flex flex={['12', '2']}>
               <Avatar
                 name=""
                 src="https://thispersondoesnotexist.com/image"
@@ -101,13 +121,16 @@ export default function Home(): JSX.Element {
               >
                 <List spacing={listSpacing} alignItems={alignmentStatement}>
                   <ListItem>
-                    <Heading size={headingFontSize} textAlign="left">
+                    <Heading
+                      fontSize={['4xl', headingFontSize]}
+                      textAlign="left"
+                    >
                       Marilene Brusco
                     </Heading>
                   </ListItem>
                   <ListItem>
                     <Heading
-                      size={headingFontSize}
+                      fontSize={['4xl', headingFontSize]}
                       fontWeight="thin"
                       textAlign="left"
                     >
@@ -116,7 +139,11 @@ export default function Home(): JSX.Element {
                   </ListItem>
 
                   <ListItem>
-                    <Text fontSize="xl" fontWeight="normal" textAlign="left">
+                    <Text
+                      fontSize={['4xl', 'xl']}
+                      fontWeight="normal"
+                      textAlign="left"
+                    >
                       Profissionais competentes e Confiáveis, ótimo atendimento
                       aos clientes
                     </Text>
@@ -128,7 +155,7 @@ export default function Home(): JSX.Element {
           </Flex>
           <Flex>
             <Flex flex="1"></Flex>
-            <Flex marginTop={10} flex="2">
+            <Flex marginTop={10} flex={['12', '2']}>
               <Box
                 backgroundColor="blue.500"
                 borderRadius="lg"
@@ -139,13 +166,16 @@ export default function Home(): JSX.Element {
               >
                 <List spacing={listSpacing} alignItems={alignmentStatement}>
                   <ListItem>
-                    <Heading size={headingFontSize} textAlign="left">
+                    <Heading
+                      fontSize={['4xl', headingFontSize]}
+                      textAlign="left"
+                    >
                       Lúcia Rockembach
                     </Heading>
                   </ListItem>
                   <ListItem>
                     <Heading
-                      size={headingFontSize}
+                      fontSize={['4xl', headingFontSize]}
                       fontWeight="thin"
                       textAlign="left"
                     >
@@ -154,7 +184,11 @@ export default function Home(): JSX.Element {
                   </ListItem>
 
                   <ListItem>
-                    <Text fontSize="xl" fontWeight="normal" textAlign="left">
+                    <Text
+                      fontSize={['4xl', 'xl']}
+                      fontWeight="normal"
+                      textAlign="left"
+                    >
                       Sinônimo de confiança, presteza, muita discrição no
                       ambiente de trabalho e o atendimento personalizado
                     </Text>
@@ -171,7 +205,7 @@ export default function Home(): JSX.Element {
           </Flex>
 
           <Flex>
-            <Flex marginTop={10} flex="2">
+            <Flex marginTop={10} flex={['12', '2']}>
               <Avatar
                 name=""
                 src="https://thispersondoesnotexist.com/image"
@@ -188,13 +222,16 @@ export default function Home(): JSX.Element {
               >
                 <List spacing={listSpacing} alignItems={alignmentStatement}>
                   <ListItem>
-                    <Heading size={headingFontSize} textAlign="left">
+                    <Heading
+                      fontSize={['4xl', headingFontSize]}
+                      textAlign="left"
+                    >
                       Yamara Eichner
                     </Heading>
                   </ListItem>
                   <ListItem>
                     <Heading
-                      size={headingFontSize}
+                      fontSize={['4xl', headingFontSize]}
                       fontWeight="thin"
                       textAlign="left"
                     >
@@ -203,7 +240,11 @@ export default function Home(): JSX.Element {
                   </ListItem>
 
                   <ListItem>
-                    <Text fontSize="xl" fontWeight="normal" textAlign="left">
+                    <Text
+                      fontSize={['4xl', 'xl']}
+                      fontWeight="normal"
+                      textAlign="left"
+                    >
                       Atendimento personalizado, suporte rápido e eficiente,
                       discrição e confiabilidade em projetos customizados
                     </Text>
