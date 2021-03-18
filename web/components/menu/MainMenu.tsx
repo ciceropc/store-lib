@@ -8,13 +8,7 @@ import LogoSVG from '../../public/LogoSVG'
 export default function MainMenu({ gridArea, paddingX }): JSX.Element {
   return (
     <Flex
-      backgroundColor={[
-        'red.500',
-        'orange.500',
-        'yellow.500',
-        'green.500',
-        'blue.500'
-      ]}
+      backgroundColor="blue.500"
       direction={['column', 'row']}
       gridArea={gridArea}
       paddingX={paddingX}
