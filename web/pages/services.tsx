@@ -1,4 +1,4 @@
-import { Flex } from '@chakra-ui/core'
+import { Flex } from '@chakra-ui/react'
 import ServiceSection from '../components/ServiceSection'
 
 export default function Services(): JSX.Element {

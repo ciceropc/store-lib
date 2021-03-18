@@ -1,4 +1,4 @@
-import { Flex, Heading, Link, List, ListItem } from '@chakra-ui/core'
+import { Flex, Heading, Link, List, ListItem } from '@chakra-ui/react'
 
 export default function Footer({ gridArea, paddingX }): JSX.Element {
   const headingFontSize = 'md'

@@ -8,7 +8,7 @@ import {
   List,
   ListItem,
   Text
-} from '@chakra-ui/core'
+} from '@chakra-ui/react'
 import ActionButton from '../components/ActionButton'
 export default function Home(): JSX.Element {
   const paddingX = '20%'

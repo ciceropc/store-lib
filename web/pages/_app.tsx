@@ -1,6 +1,6 @@
 import ThemeContainer from '../contexts/theme/ThemeContainer'
 
-import { Flex, Grid, Heading } from '@chakra-ui/core'
+import { Flex, Grid, Heading } from '@chakra-ui/react'
 import MainMenu from '../components/menu/MainMenu'
 import Footer from '../components/Footer'
 
@@ -9,29 +9,17 @@ export default function App({ Component, pageProps, props }): JSX.Element {
   const paddingX = '10%'
   return (
     <ThemeContainer>
-      <Grid
-        as="main"
-        backgroundColor="white"
-        fontFamily="body"
-        templateColumns="100vw"
-        templateRows="100px 1fr 280px"
-        templateAreas="
-          'MainMenu'
-          'Content'
-          'Footer'
-        "
-      >
-        <MainMenu gridArea="MainMenu" paddingX={[2, paddingX]} />
-        <Flex gridArea="Content" flex="1">
-          <Heading>{props?.posts} </Heading>
-          <Component {...pageProps} />
-        </Flex>
-        <Footer gridArea="Footer" paddingX={[2, paddingX]} />
-      </Grid>
+      <MainMenu gridArea="MainMenu" paddingX={[2, paddingX]} />
+      <Flex gridArea="Content" flex="1">
+        <Heading>{props?.posts} </Heading>
+        <Component {...pageProps} />
+      </Flex>
+      <Footer gridArea="Footer" paddingX={[2, paddingX]} />
     </ThemeContainer>
   )
 }
 
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export const getServerSideProps = async () => {
   // eslint-disable-next-line @typescript-eslint/no-var-requires
   const client = require('contentful').createClient({
