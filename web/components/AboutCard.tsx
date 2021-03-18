@@ -1,4 +1,4 @@
-import { Avatar, Flex, Heading, Link, List, ListItem } from '@chakra-ui/react'
+import { Avatar, Flex, Heading, Link, List, ListItem } from '@chakra-ui/core'
 
 interface AboutCardParameters {
   name: string

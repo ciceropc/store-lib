@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-use-before-define
 
-import { Button, Flex, Grid, Input, Text, Textarea } from '@chakra-ui/react'
+import { Button, Flex, Grid, Input, Text, Textarea } from '@chakra-ui/core'
 
 export default function Contact(): JSX.Element {
   return (

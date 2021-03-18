@@ -1,4 +1,4 @@
-import { Flex, Icon, Link } from '@chakra-ui/react'
+import { Flex, Icon, Link } from '@chakra-ui/core'
 import { IconDownload } from '../../assets/Icons'
 import ActionButton from '../../components/ActionButton'
 import MenuButton from '../../components/menu/MenuButton'

@@ -1,4 +1,4 @@
-import { Flex } from '@chakra-ui/react'
+import { Flex } from '@chakra-ui/core'
 
 interface IconParameters {
   size?: string

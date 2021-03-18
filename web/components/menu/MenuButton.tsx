@@ -1,4 +1,4 @@
-import { Flex, Link } from '@chakra-ui/react'
+import { Flex, Link } from '@chakra-ui/core'
 
 export default function MenuButton({ text, destination }): JSX.Element {
   function teste() {

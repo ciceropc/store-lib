@@ -1,6 +1,6 @@
 import ThemeContainer from '../contexts/theme/ThemeContainer'
 
-import { Flex, Grid, Heading } from '@chakra-ui/react'
+import { Flex, Grid, Heading } from '@chakra-ui/core'
 import MainMenu from '../components/menu/MainMenu'
 import Footer from '../components/Footer'
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types

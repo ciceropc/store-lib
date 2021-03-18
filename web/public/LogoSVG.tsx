@@ -1,4 +1,4 @@
-import { Flex } from '@chakra-ui/react'
+import { Flex } from '@chakra-ui/core'
 
 export default function LogoSVG({ color, size }) {
   return (

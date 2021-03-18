@@ -9,7 +9,7 @@ import {
   List,
   ListItem,
   Text
-} from '@chakra-ui/react'
+} from '@chakra-ui/core'
 import AboutCard from '../components/AboutCard'
 export default function About(): JSX.Element {
   return (
