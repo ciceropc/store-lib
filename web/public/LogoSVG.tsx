@@ -2,8 +2,11 @@ import { Flex } from '@chakra-ui/core'
 
 export default function LogoSVG({ color, size }) {
   return (
-    <Flex height={size}>
-      <Flex height={size + 'px'} width={size + 'px'}>
+    <Flex height={[size * 2, size]}>
+      <Flex
+        height={[size * 1.5 + 'px', size + 'px']}
+        width={[size * 1.5 + 'px', size + 'px']}
+      >
         <svg viewBox="0 0 382.053 491.207" xmlns="http://www.w3.org/2000/svg">
           <g
             transform="matrix(0.042864, 0, 0, -0.042864, -205.489746, 758.420166)"
@@ -17,9 +20,9 @@ export default function LogoSVG({ color, size }) {
         </svg>
       </Flex>
       <Flex
-        height={size + 'px'}
+        height={[size * 1.5 + 'px', size + 'px']}
         paddingLeft="1"
-        width={size * 2 + 'px'}
+        width={size * 3 + 'px'}
         paddingY="6"
       >
         <svg

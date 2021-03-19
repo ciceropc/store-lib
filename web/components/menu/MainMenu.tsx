@@ -18,7 +18,7 @@ export default function MainMenu({ gridArea, paddingX }): JSX.Element {
       zIndex={10}
       alignItems={['center', 'auto']}
     >
-      <Link href="/" _hover={{}} paddingY="3">
+      <Link href="/" _hover={{}} paddingY={['1', '3']} paddingTop={[10, 20]}>
         <LogoSVG color="white" size="70" />
       </Link>
 

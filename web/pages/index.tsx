@@ -95,7 +95,7 @@ export default function Home(): JSX.Element {
         backgroundColor="yellow.500"
         color="gray.800"
         paddingY={[2, '10%']}
-        paddingX="10%"
+        paddingX={[2, '10%']}
         textAlign="center"
       >
         <Heading marginBottom={[8, 12]} fontSize={['6xl', '4xl']}>
