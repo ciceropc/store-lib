@@ -9,6 +9,7 @@ import Utils from '../../utils/components_utils'
 export default function MainMenu({ gridArea }): JSX.Element {
   return (
     <Flex
+      alignItems={['center', 'auto']}
       backgroundColor="blue.500"
       direction={['column', 'row']}
       gridArea={gridArea}
@@ -17,7 +18,6 @@ export default function MainMenu({ gridArea }): JSX.Element {
       top={0}
       transition="height .5s, line-height .5s"
       zIndex={10}
-      alignItems={['center', 'auto']}
       width={Utils.defaultResponsiveWidth}
     >
       <Flex flex="1">
