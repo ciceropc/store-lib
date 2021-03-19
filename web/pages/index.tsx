@@ -10,6 +10,7 @@ import {
   Text
 } from '@chakra-ui/core'
 import ActionButton from '../components/ActionButton'
+import Utils from '../utils/components_utils'
 
 export default function Home(): JSX.Element {
   const paddingX = [4, '20%']
@@ -24,7 +25,7 @@ export default function Home(): JSX.Element {
         direction="column"
         backgroundColor="blue.500"
         color="white"
-        paddingY={[8, paddingY]}
+        paddingY={Utils.defaultPaddingX}
         paddingX={paddingX}
         textAlign="center"
         alignItems="center"

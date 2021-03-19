@@ -1,6 +1,7 @@
 import { Flex, Heading, Link, List, ListItem } from '@chakra-ui/core'
+import Utils from '../utils/components_utils'
 
-export default function Footer({ gridArea, paddingX }): JSX.Element {
+export default function Footer({ gridArea }): JSX.Element {
   const headingFontSize = ['2xl', 'md']
   const paddingTop = [6, '6']
   const listSpacing = [4, '2']
@@ -11,10 +12,11 @@ export default function Footer({ gridArea, paddingX }): JSX.Element {
       flex="1"
       fontSize={['xl', 'sm']}
       gridArea={gridArea}
-      paddingX={[10, paddingX]}
+      paddingX={Utils.defaultPaddingX}
       paddingY="8"
       color="gray.100"
       align="start"
+      width={Utils.defaultResponsiveWidth}
     >
       <Flex flex="1" direction="column">
         <List spacing={listSpacing}>
@@ -68,7 +70,6 @@ export default function Footer({ gridArea, paddingX }): JSX.Element {
           <ListItem>Niterói - Canoas</ListItem>
         </List>
       </Flex>
-      <Flex flex={['2', '1']}></Flex>
     </Flex>
   )
 }

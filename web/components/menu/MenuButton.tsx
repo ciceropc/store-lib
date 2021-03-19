@@ -20,7 +20,7 @@ export default function MenuButton(props: MenuButtonParameters): JSX.Element {
   const fontSize = props.fontSize ?? ''
   const fontWeight = props.fontWeight ?? 'bold'
   const hoverColor = props.hoverColor ?? 'gray.300'
-  const hoverBackgroundColor = props.hoverBackgroundColor ?? 'blue.500'
+  const hoverBackgroundColor = props.hoverBackgroundColor ?? ''
   return (
     <Flex>
       <Link
