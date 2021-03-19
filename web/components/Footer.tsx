@@ -2,8 +2,8 @@ import { Flex, Heading, Link, List, ListItem } from '@chakra-ui/core'
 
 export default function Footer({ gridArea, paddingX }): JSX.Element {
   const headingFontSize = ['2xl', 'md']
-  const paddingTop = [12, '6']
-  const listSpacing = [6, '2']
+  const paddingTop = [6, '6']
+  const listSpacing = [4, '2']
   return (
     <Flex
       backgroundColor="gray.900"
@@ -33,9 +33,9 @@ export default function Footer({ gridArea, paddingX }): JSX.Element {
         </List>
       </Flex>
 
-      <Flex flex="1"></Flex>
-      <Flex flex="2" direction="column">
-        <List spacing={listSpacing} paddingTop={[12, 0]}>
+      <Flex flex={['0', '1']}></Flex>
+      <Flex flex={['1', '2']} direction="column">
+        <List spacing={listSpacing} paddingTop={[6, 0]}>
           <ListItem>
             <Link href="services">
               <Heading fontSize={headingFontSize}>Serviços Oferecidos</Heading>
@@ -50,9 +50,9 @@ export default function Footer({ gridArea, paddingX }): JSX.Element {
         </List>
       </Flex>
 
-      <Flex flex="1"></Flex>
+      <Flex flex={['0', '1']}></Flex>
       <Flex flex="1" direction="column">
-        <List spacing={listSpacing}>
+        <List spacing={listSpacing} paddingTop={[6, 0]}>
           <ListItem>
             <Link href="contact">
               <Heading fontSize={headingFontSize}>Contato</Heading>
@@ -68,6 +68,7 @@ export default function Footer({ gridArea, paddingX }): JSX.Element {
           <ListItem>Niterói - Canoas</ListItem>
         </List>
       </Flex>
+      <Flex flex={['2', '1']}></Flex>
     </Flex>
   )
 }
