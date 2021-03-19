@@ -12,7 +12,7 @@ import {
 import ActionButton from '../components/ActionButton'
 
 export default function Home(): JSX.Element {
-  const paddingX = '20%'
+  const paddingX = [4, '20%']
   const paddingY = '8%'
   const alignmentStatement = 'center'
   const headingFontSize = 'md'
@@ -25,7 +25,7 @@ export default function Home(): JSX.Element {
         backgroundColor="blue.500"
         color="white"
         paddingY={[8, paddingY]}
-        paddingX={[2, paddingX]}
+        paddingX={paddingX}
         textAlign="center"
         alignItems="center"
       >
@@ -54,7 +54,7 @@ export default function Home(): JSX.Element {
         textAlign="center"
       >
         <Heading
-          paddingLeft={6}
+          paddingLeft={[0, 6]}
           marginRight={6}
           marginBottom={[6, 0]}
           fontSize={['6xl', '4xl']}
@@ -82,7 +82,6 @@ export default function Home(): JSX.Element {
         textAlign="center"
       >
         <Heading marginBottom={6} fontSize={['6xl', '4xl']}>
-          {' '}
           O que oferecemos
         </Heading>
         <Heading fontSize={['2xl', 'xl']} fontWeight="normal">
@@ -95,11 +94,11 @@ export default function Home(): JSX.Element {
         direction="column"
         backgroundColor="yellow.500"
         color="gray.800"
-        paddingY="10%"
+        paddingY={[2, '10%']}
         paddingX="10%"
         textAlign="center"
       >
-        <Heading marginBottom={12} fontSize={['6xl', '4xl']}>
+        <Heading marginBottom={[8, 12]} fontSize={['6xl', '4xl']}>
           O que nossos clientes falam sobre nós?
         </Heading>
         <Box paddingY={6} paddingX={6} borderRadius="lg">
