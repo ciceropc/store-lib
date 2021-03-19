@@ -24,12 +24,29 @@ export default function MainMenu({ gridArea, paddingX }): JSX.Element {
 
       <Flex flex={['0', '1']}></Flex>
 
-      <Flex flex="1">
-        <MenuButton destination="/services" text="Serviços oferecidos" />
-        <MenuButton destination="/about" text="Quem somos nós?" />
-        <MenuButton destination="/contact" text="Contato" />
+      <Flex
+        flex="1"
+        direction={['column', 'row']}
+        alignItems={['center', 'unset']}
+      >
+        <MenuButton
+          destination="/services"
+          fontSize={['xl', 'md']}
+          text="Serviços oferecidos"
+        />
+        <MenuButton
+          destination="/about"
+          fontSize={['xl', 'md']}
+          text="Quem somos nós?"
+        />
+        <MenuButton
+          destination="/contact"
+          fontSize={['xl', 'md']}
+          text="Contato"
+        />
         <ActionButton
           destination="http://remoto.infoassist.com.br/"
+          fontSize={['xl', 'md']}
           text="Suporte Remoto"
         />
       </Flex>

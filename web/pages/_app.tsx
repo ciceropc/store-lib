@@ -13,7 +13,7 @@ export default function App({ Component, pageProps, props }): JSX.Element {
         backgroundColor="white"
         fontFamily="body"
         templateColumns="1fr"
-        templateRows={['200px 1fr 280px', '100px 1fr 280px']}
+        templateRows={['600px 1fr 880px', '100px 1fr 280px']}
         templateAreas="
           'MainMenu'
           'Content'
@@ -21,7 +21,7 @@ export default function App({ Component, pageProps, props }): JSX.Element {
         "
       >
         <MainMenu gridArea="MainMenu" paddingX={[2, paddingX]} />
-        <Flex gridArea="Content" flex="1">
+        <Flex gridArea="Content" flex="1" width={['120vw', '100vw']}>
           <Heading>{props?.posts} </Heading>
           <Component {...pageProps} />
         </Flex>

@@ -1,15 +1,15 @@
 import { Flex, Heading, Link, List, ListItem } from '@chakra-ui/core'
 
 export default function Footer({ gridArea, paddingX }): JSX.Element {
-  const headingFontSize = ['4xl', 'md']
-  const paddingTop = ['8', '6']
-  const listSpacing = '2'
+  const headingFontSize = ['2xl', 'md']
+  const paddingTop = [12, '6']
+  const listSpacing = [6, '2']
   return (
     <Flex
       backgroundColor="gray.900"
       direction={['column', 'row']}
       flex="1"
-      fontSize={['3xl', 'sm']}
+      fontSize={['xl', 'sm']}
       gridArea={gridArea}
       paddingX={[10, paddingX]}
       paddingY="8"
@@ -35,7 +35,7 @@ export default function Footer({ gridArea, paddingX }): JSX.Element {
 
       <Flex flex="1"></Flex>
       <Flex flex="2" direction="column">
-        <List spacing={listSpacing}>
+        <List spacing={listSpacing} paddingTop={[12, 0]}>
           <ListItem>
             <Link href="services">
               <Heading fontSize={headingFontSize}>Serviços Oferecidos</Heading>

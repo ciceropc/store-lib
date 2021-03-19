@@ -33,7 +33,7 @@ export default function Home(): JSX.Element {
           {' '}
           Gestão de Tecnologia da Informação
         </Heading>
-        <Heading fontSize={['4xl', 'xl']} fontWeight="normal" marginBottom={6}>
+        <Heading fontSize={['2xl', 'xl']} fontWeight="normal" marginBottom={6}>
           Somos uma empresa que transforma o ambiente de tecnologia em
           ferramenta de potencialização de resultados dos nossos clientes
         </Heading>
@@ -41,7 +41,7 @@ export default function Home(): JSX.Element {
           backgroundColor="yellow.500"
           color="gray.800"
           destination="http://www.google.com.br"
-          fontSize={['2xl', 'md']}
+          fontSize={['xl', 'md']}
           text="Agende uma consultoria"
         />
       </Flex>
@@ -65,7 +65,7 @@ export default function Home(): JSX.Element {
         </Heading>
         <Text
           textAlign={['center', 'left']}
-          fontSize={['4xl', 'xl']}
+          fontSize={['2xl', 'xl']}
           marginTop={2}
         >
           Reduzindo ao máximo os problemas com análise de infraestrutura,
@@ -85,7 +85,7 @@ export default function Home(): JSX.Element {
           {' '}
           O que oferecemos
         </Heading>
-        <Heading fontSize={['4xl', 'xl']} fontWeight="normal">
+        <Heading fontSize={['2xl', 'xl']} fontWeight="normal">
           A Infoassist Tecnologia é uma empresa que transforma o ambiente de
           tecnologia em ferramenta de potencialização de resultados dos nossos
           clientes.
@@ -122,7 +122,7 @@ export default function Home(): JSX.Element {
                 <List spacing={listSpacing} alignItems={alignmentStatement}>
                   <ListItem>
                     <Heading
-                      fontSize={['4xl', headingFontSize]}
+                      fontSize={['2xl', headingFontSize]}
                       textAlign="left"
                     >
                       Marilene Brusco
@@ -130,7 +130,7 @@ export default function Home(): JSX.Element {
                   </ListItem>
                   <ListItem>
                     <Heading
-                      fontSize={['4xl', headingFontSize]}
+                      fontSize={['2xl', headingFontSize]}
                       fontWeight="thin"
                       textAlign="left"
                     >
@@ -140,7 +140,7 @@ export default function Home(): JSX.Element {
 
                   <ListItem>
                     <Text
-                      fontSize={['4xl', 'xl']}
+                      fontSize={['2xl', 'xl']}
                       fontWeight="normal"
                       textAlign="left"
                     >
@@ -167,7 +167,7 @@ export default function Home(): JSX.Element {
                 <List spacing={listSpacing} alignItems={alignmentStatement}>
                   <ListItem>
                     <Heading
-                      fontSize={['4xl', headingFontSize]}
+                      fontSize={['2xl', headingFontSize]}
                       textAlign="left"
                     >
                       Lúcia Rockembach
@@ -175,7 +175,7 @@ export default function Home(): JSX.Element {
                   </ListItem>
                   <ListItem>
                     <Heading
-                      fontSize={['4xl', headingFontSize]}
+                      fontSize={['2xl', headingFontSize]}
                       fontWeight="thin"
                       textAlign="left"
                     >
@@ -185,7 +185,7 @@ export default function Home(): JSX.Element {
 
                   <ListItem>
                     <Text
-                      fontSize={['4xl', 'xl']}
+                      fontSize={['2xl', 'xl']}
                       fontWeight="normal"
                       textAlign="left"
                     >
@@ -223,7 +223,7 @@ export default function Home(): JSX.Element {
                 <List spacing={listSpacing} alignItems={alignmentStatement}>
                   <ListItem>
                     <Heading
-                      fontSize={['4xl', headingFontSize]}
+                      fontSize={['2xl', headingFontSize]}
                       textAlign="left"
                     >
                       Yamara Eichner
@@ -231,7 +231,7 @@ export default function Home(): JSX.Element {
                   </ListItem>
                   <ListItem>
                     <Heading
-                      fontSize={['4xl', headingFontSize]}
+                      fontSize={['2xl', headingFontSize]}
                       fontWeight="thin"
                       textAlign="left"
                     >
@@ -241,7 +241,7 @@ export default function Home(): JSX.Element {
 
                   <ListItem>
                     <Text
-                      fontSize={['4xl', 'xl']}
+                      fontSize={['2xl', 'xl']}
                       fontWeight="normal"
                       textAlign="left"
                     >
