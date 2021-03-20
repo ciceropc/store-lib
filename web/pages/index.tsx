@@ -13,7 +13,7 @@ import ActionButton from '../components/ActionButton'
 import Utils from '../utils/components_utils'
 
 export default function Home(): JSX.Element {
-  const paddingX = [4, '20%']
+  const paddingX = [4, '10%']
   const paddingY = '8%'
   const alignmentStatement = 'center'
   const headingFontSize = 'md'
@@ -31,7 +31,6 @@ export default function Home(): JSX.Element {
         alignItems="center"
       >
         <Heading marginBottom={6} fontSize={['6xl', '4xl']}>
-          {' '}
           Gestão de Tecnologia da Informação
         </Heading>
         <Heading fontSize={['2xl', 'xl']} fontWeight="normal" marginBottom={6}>
@@ -86,9 +85,8 @@ export default function Home(): JSX.Element {
           O que oferecemos
         </Heading>
         <Heading fontSize={['2xl', 'xl']} fontWeight="normal">
-          A Infoassist Tecnologia é uma empresa que transforma o ambiente de
-          tecnologia em ferramenta de potencialização de resultados dos nossos
-          clientes.
+          Somos uma empresa que transforma o ambiente de tecnologia em uma
+          ferramenta de potencialização de resultados dos nossos clientes
         </Heading>
       </Flex>
       <Flex
