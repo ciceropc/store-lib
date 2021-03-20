@@ -1,11 +1,13 @@
-import Head from "next/head";
-import { version } from "../package.json";
+import Head from 'next/head'
+import { version } from '../package.json'
 import { AppProps } from 'next/app'
+
+import * as gtag from '../lib/gtag'
 
 import '../styles/globals.css'
 import styles from '../styles/Home.module.css'
 
-const App = ({ Component, pageProps }) => ( 
+const App = ({ Component, pageProps }) => (
   <>
     <Head>
       <title>InfoAssist</title>
@@ -25,14 +27,13 @@ const App = ({ Component, pageProps }) => (
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta charSet="utf-8" />
       <link rel="icon" href="/favicon.ico" />
-    </Head> 
-    <Component { ...pageProps }/> 
+    </Head>
+    <Component {...pageProps} />
 
-      <footer className={styles.footer}>
-        <a>&reg; InfoTech 2021</a>
-      </footer>
+    <footer className={styles.footer}>
+      <a>&reg; InfoTech 2021</a>
+    </footer>
   </>
-);
+)
 
-
-export default App;
+export default App
