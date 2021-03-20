@@ -117,7 +117,7 @@ export default function Home(): JSX.Element {
                 marginTop={8}
               />
               <Box
-                backgroundColor="blue.500"
+                backgroundColor="blue.800"
                 borderRadius="lg"
                 color="white"
                 paddingX={paddingTop}
