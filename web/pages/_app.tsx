@@ -6,7 +6,6 @@ import Footer from '../components/Footer'
 import Utils from '../utils/components_utils'
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export default function App({ Component, pageProps, props }): JSX.Element {
-  const paddingX = '10%'
   return (
     <ThemeContainer>
       <Grid
