@@ -98,11 +98,18 @@ export default function Home(): JSX.Element {
         paddingY={[2, '10%']}
         paddingX={[2, '10%']}
         textAlign="center"
+        alignItems="center"
       >
         <Heading marginBottom={[8, 12]} fontSize={['6xl', '4xl']}>
           O que nossos clientes falam sobre nós?
         </Heading>
-        <Box paddingY={6} paddingX={6} borderRadius="lg">
+        <Box
+          paddingY={6}
+          paddingX={6}
+          borderRadius="lg"
+          textAlign="center"
+          alignItems="center"
+        >
           <Flex>
             <Flex flex={['12', '2']}>
               <Avatar
