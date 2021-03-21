@@ -3,6 +3,7 @@ import Head from 'next/head'
 import * as gtag from '../lib/gtag'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
+import { GA_TRACKING_ID } from '../lib/gtag'
 
 import '../styles/globals.css'
 import styles from '../styles/Home.module.css'
@@ -38,6 +39,24 @@ const App = ({ Component, pageProps }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charSet="utf-8" />
         <link rel="icon" href="/favicon.ico" />
+
+        {/* Global Site Tag (gtag.js) - Google Analytics */}
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_TRACKING_ID}', {
+              page_path: window.location.pathname,
+            });
+          `
+          }}
+        />
       </Head>
       <Component {...pageProps} />
 
