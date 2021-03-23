@@ -26,9 +26,8 @@ export default function ContentSection(
       direction={direction}
       backgroundColor={backgroundColor}
       color={color}
-      paddingBottom={Utils.defaultPaddingY}
-      paddingTop={Utils.defaultPaddingY}
       paddingX={Utils.defaultPaddingX}
+      paddingY={Utils.defaultPaddingY}
       textAlign={alignment}
     >
       <Heading color={color} marginBottom={4}>

@@ -1,10 +1,14 @@
-import { Flex } from '@chakra-ui/core'
 import ContentSection from '../components/ContentSection'
 import ServiceSection from '../components/ServiceSection'
 
 export default function Services(): JSX.Element {
   return (
-    <ContentSection backgroundColor="white" color="black">
+    <ContentSection
+      alignment="left"
+      backgroundColor="white"
+      color="black"
+      title="O que oferecemos?"
+    >
       <ServiceSection
         backgroundImageSrc="https://images.ctfassets.net/jt1652yryijm/7CEMbSWcNEwsufWk8mB4rv/9668f922972a502119edd4f5ff4449ee/pexels-eli-palma-castan__eda-6663191.jpg"
         name="Reparo"

@@ -1,20 +1,14 @@
 // eslint-disable-next-line no-use-before-define
 
-import {
-  Avatar,
-  Flex,
-  Grid,
-  Heading,
-  Link,
-  List,
-  ListItem,
-  Text
-} from '@chakra-ui/core'
+import { Grid, Text } from '@chakra-ui/core'
+
 import AboutCard from '../components/AboutCard'
 import ContentSection from '../components/ContentSection'
+
 export default function About(): JSX.Element {
   return (
     <ContentSection
+      alignment="left"
       backgroundColor="white"
       color="black"
       title="Quem somos nós?"

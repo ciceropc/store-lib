@@ -1,11 +1,17 @@
 // eslint-disable-next-line no-use-before-define
 
 import { Button, Flex, Grid, Input, Text, Textarea } from '@chakra-ui/core'
+
 import ContentSection from '../components/ContentSection'
 
 export default function Contact(): JSX.Element {
   return (
-    <ContentSection backgroundColor="white" color="black" title="Fale conosco">
+    <ContentSection
+      alignment="left"
+      backgroundColor="white"
+      color="black"
+      title="Fale conosco"
+    >
       <Flex>
         <Text textAlign="justify" paddingY="8" lineHeight="2">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
