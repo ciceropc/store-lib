@@ -22,23 +22,19 @@ export default function ContentSection(
 
   return (
     <Flex
-      paddingX={Utils.defaultPaddingX}
-      paddingTop={Utils.defaultPaddingY}
+      alignItems={alignment}
       direction={direction}
+      backgroundColor={backgroundColor}
+      color={color}
+      paddingBottom={Utils.defaultPaddingY}
+      paddingTop={Utils.defaultPaddingY}
+      paddingX={Utils.defaultPaddingX}
+      textAlign={alignment}
     >
       <Heading color={color} marginBottom={4}>
         {title}
       </Heading>
-      <Flex
-        direction={direction}
-        backgroundColor={backgroundColor}
-        color={color}
-        paddingBottom={Utils.defaultPaddingY}
-        textAlign={alignment}
-        alignItems={alignment}
-      >
-        {props.children}
-      </Flex>
+      {props.children}
     </Flex>
   )
 }
