@@ -74,26 +74,20 @@ export default function Home(): JSX.Element {
         <Heading marginBottom={[8, 12]} fontSize={['6xl', '4xl']}>
           O que nossos clientes falam sobre nós?
         </Heading>
-        <Box
-          paddingY={6}
-          paddingX={6}
-          borderRadius="lg"
-          textAlign="center"
-          alignItems="center"
-        >
+        <Box borderRadius="lg" textAlign="center" alignItems="center">
           <TestimonialBox
             testimonialAuthor="Marilene Brusco"
             testimonialCompany="Azevedo Advogados"
             testimonialText="Profissionais competentes e Confiáveis, ótimo atendimento aos clientes"
           />
-
+          <Box height={8} />
           <TestimonialBox
             testimonialAuthor="Lúcia Rockembach"
             testimonialCompany="Vidal Falcão Advocacia Empresarial"
             testimonialText="Sinônimo de confiança, presteza, muita discrição no ambiente de trabalho e o atendimento personalizado"
             alignment="right"
           />
-
+          <Box height={8} />
           <TestimonialBox
             testimonialAuthor="Yamara Eichner"
             testimonialCompany="Naturoils"

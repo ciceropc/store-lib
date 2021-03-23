@@ -52,7 +52,7 @@ export default function TestimonialBox(
   }
 
   return (
-    <Flex marginY={8}>
+    <Flex>
       <Flex flex={flexLeft}></Flex>
       <Flex flex={flexContent}>
         {avatarOnLeft}

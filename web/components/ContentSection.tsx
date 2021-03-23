@@ -1,4 +1,4 @@
-import { Flex } from '@chakra-ui/core'
+import { Flex, Heading } from '@chakra-ui/core'
 
 import Utils from '../utils/components_utils'
 
@@ -8,6 +8,7 @@ interface ContentSectionParameters {
   children?
   color?: string
   direction?
+  title?
 }
 
 export default function ContentSection(
@@ -17,18 +18,27 @@ export default function ContentSection(
   const backgroundColor = props.backgroundColor ?? 'blue.500'
   const color = props.color ?? 'white'
   const direction = props.direction ?? 'column'
+  const title = props.title
 
   return (
     <Flex
-      direction={direction}
-      backgroundColor={backgroundColor}
-      color={color}
-      paddingY={Utils.defaultPaddingY}
       paddingX={Utils.defaultPaddingX}
-      textAlign={alignment}
-      alignItems={alignment}
+      paddingTop={Utils.defaultPaddingY}
+      direction={direction}
     >
-      {props.children}
+      <Heading color={color} marginBottom={4}>
+        {title}
+      </Heading>
+      <Flex
+        direction={direction}
+        backgroundColor={backgroundColor}
+        color={color}
+        paddingBottom={Utils.defaultPaddingY}
+        textAlign={alignment}
+        alignItems={alignment}
+      >
+        {props.children}
+      </Flex>
     </Flex>
   )
 }

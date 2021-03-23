@@ -17,9 +17,6 @@ interface AboutCardParameters {
 }
 
 export default function AboutCard(props: AboutCardParameters): JSX.Element {
-  function teste() {
-    console.log('tapped ' + props.name)
-  }
   const alignment = props.alignment ?? 'center'
   const avatarSize = props.avatarSize ?? '2xl'
   const backgroundColorDefault = props.backgroundColorDefault ?? 'gray.800'
@@ -27,13 +24,14 @@ export default function AboutCard(props: AboutCardParameters): JSX.Element {
   const colorDefault = props.colorDefault ?? 'white'
   const colorHover = props.colorHover ?? 'gray.800'
   const headingFontSize = props.alignment ?? 'md'
-  const listSpacing = props.listSpacing ?? '1'
+  const headingFontWeight = 'thin'
+  const listSpacing = props.listSpacing ?? '3'
   const paddingTop = props.paddingTop ?? '6'
 
   return (
     <Link
       backgroundColor={backgroundColorDefault}
-      borderRadius="sm"
+      borderRadius="md"
       color={colorDefault}
       cursor="default"
       _hover={{
@@ -63,7 +61,7 @@ export default function AboutCard(props: AboutCardParameters): JSX.Element {
               size={headingFontSize}
               textAlign={alignment}
               textTransform="uppercase"
-              fontWeight="thin"
+              fontWeight={headingFontWeight}
             >
               {props.headDescription}
             </Heading>
