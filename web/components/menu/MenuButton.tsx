@@ -20,11 +20,15 @@ export default function MenuButton(props: MenuButtonParameters): JSX.Element {
   const fontSize = props.fontSize ?? ''
   const fontWeight = props.fontWeight ?? 'bold'
   const hoverBackgroundColor = props.hoverBackgroundColor ?? ''
-  const hoverColor = props.hoverColor ?? 'gray.300'
+  const hoverColor = props.hoverColor ?? 'white'
   return (
-    <Flex>
+    <Flex paddingTop={10} paddingBottom={6}>
       <Link
-        _hover={{ backgroundColor: hoverBackgroundColor, color: hoverColor }}
+        _hover={{
+          backgroundColor: hoverBackgroundColor,
+          borderBottom: '4px solid ' + hoverColor,
+          color: hoverColor
+        }}
         backgroundColor={backgroundColor}
         color={color}
         fontSize={fontSize}
@@ -32,11 +36,10 @@ export default function MenuButton(props: MenuButtonParameters): JSX.Element {
         href={props.destination}
         onClick={teste}
         overflow="hidden"
-        paddingX="6"
-        paddingY="10"
+        paddingTop={6}
+        paddingX={4}
         textTransform="uppercase"
         whiteSpace="nowrap"
-        height="100%"
       >
         {props.text}
       </Link>

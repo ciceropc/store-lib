@@ -1,5 +1,4 @@
-import { Flex, Icon, Link } from '@chakra-ui/core'
-import { IconDownload } from '../../assets/Icons'
+import { Flex, Link } from '@chakra-ui/core'
 import ActionButton from '../../components/ActionButton'
 import MenuButton from '../../components/menu/MenuButton'
 
@@ -27,9 +26,10 @@ export default function MainMenu({ gridArea }): JSX.Element {
       </Flex>
       <Flex flex={['0', '1']}></Flex>
       <Flex
-        flex="1"
-        direction={['column', 'row']}
         alignItems={['center', 'unset']}
+        direction={['column', 'row']}
+        flex="1"
+        verticalAlign="center"
       >
         <MenuButton
           destination="/services"

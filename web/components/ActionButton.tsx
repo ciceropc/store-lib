@@ -15,7 +15,7 @@ export default function ActionButton(
   props: ActionButtonParameters
 ): JSX.Element {
   function teste() {
-    console.log('tapped ' + props.text)
+    console.log('ActionButton tapped ' + props.text)
   }
   const backgroundColor = props.backgroundColor ?? 'white'
   const color = props.color ?? 'blue.500'
@@ -24,7 +24,7 @@ export default function ActionButton(
   const hoverColor = props.hoverColor ?? 'white'
   const hoverBackgroundColor = props.hoverBackgroundColor ?? 'green.500'
   return (
-    <Flex>
+    <Flex paddingY={6}>
       <Link
         _hover={{ backgroundColor: hoverBackgroundColor, color: hoverColor }}
         backgroundColor={backgroundColor}
@@ -33,12 +33,12 @@ export default function ActionButton(
         fontSize={fontSize}
         fontWeight="bold"
         href={props.destination}
-        marginX="4"
-        marginY="6"
+        marginX={4}
+        marginY={6}
         onClick={teste}
         overflow="hidden"
-        paddingX="4"
-        paddingY="4"
+        paddingX={4}
+        paddingY={4}
         textTransform="uppercase"
         whiteSpace="nowrap"
       >

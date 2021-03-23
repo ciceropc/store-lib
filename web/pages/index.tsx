@@ -1,35 +1,15 @@
 // eslint-disable-next-line no-use-before-define
 
-import {
-  Avatar,
-  Box,
-  Flex,
-  Heading,
-  List,
-  ListItem,
-  Text
-} from '@chakra-ui/core'
+import { Box, Flex, Heading, Text } from '@chakra-ui/core'
+
 import ActionButton from '../components/ActionButton'
-import Utils from '../utils/components_utils'
+import ContentSection from '../components/ContentSection'
+import TestimonialBox from '../components/TestimonialBox'
 
 export default function Home(): JSX.Element {
-  const paddingX = [4, '10%']
-  const paddingY = '8%'
-  const alignmentStatement = 'center'
-  const headingFontSize = 'md'
-  const listSpacing = '1'
-  const paddingTop = '6'
   return (
     <Flex direction="column" width="100%">
-      <Flex
-        direction="column"
-        backgroundColor="blue.500"
-        color="white"
-        paddingY={Utils.defaultPaddingX}
-        paddingX={paddingX}
-        textAlign="center"
-        alignItems="center"
-      >
+      <ContentSection>
         <Heading marginBottom={6} fontSize={['6xl', '4xl']}>
           Gestão de Tecnologia da Informação
         </Heading>
@@ -44,14 +24,12 @@ export default function Home(): JSX.Element {
           fontSize={['xl', 'md']}
           text="Agende uma consultoria"
         />
-      </Flex>
-      <Flex
+      </ContentSection>
+      <ContentSection
+        alignment="center"
         backgroundColor="white.500"
         color="black"
         direction={['column', 'row']}
-        paddingY={paddingY}
-        paddingX={paddingX}
-        textAlign="center"
       >
         <Heading
           paddingLeft={[0, 6]}
@@ -72,14 +50,12 @@ export default function Home(): JSX.Element {
           padronização de hardware e software, e monitoramento em tempo real dos
           recursos físicos dos equipamentos
         </Text>
-      </Flex>
-      <Flex
-        direction="column"
+      </ContentSection>
+      <ContentSection
+        alignment="center"
         backgroundColor="gray.100"
         color="black"
-        paddingY={paddingY}
-        paddingX={paddingX}
-        textAlign="center"
+        direction="column"
       >
         <Heading marginBottom={6} fontSize={['6xl', '4xl']}>
           O que oferecemos
@@ -88,15 +64,12 @@ export default function Home(): JSX.Element {
           Somos uma empresa que transforma o ambiente de tecnologia em uma
           ferramenta de potencialização de resultados dos nossos clientes
         </Heading>
-      </Flex>
-      <Flex
-        direction="column"
+      </ContentSection>
+      <ContentSection
+        alignment="center"
         backgroundColor="yellow.500"
         color="gray.800"
-        paddingY={[2, '10%']}
-        paddingX={[2, '10%']}
-        textAlign="center"
-        alignItems="center"
+        direction="column"
       >
         <Heading marginBottom={[8, 12]} fontSize={['6xl', '4xl']}>
           O que nossos clientes falam sobre nós?
@@ -108,160 +81,26 @@ export default function Home(): JSX.Element {
           textAlign="center"
           alignItems="center"
         >
-          <Flex>
-            <Flex flex={['12', '2']}>
-              <Avatar
-                name=""
-                src="https://thispersondoesnotexist.com/image"
-                size="xl"
-                marginTop={8}
-              />
-              <Box
-                backgroundColor="blue.500"
-                borderRadius="lg"
-                color="white"
-                paddingX={paddingTop}
-                paddingY={paddingTop}
-                marginLeft={6}
-              >
-                <List spacing={listSpacing} alignItems={alignmentStatement}>
-                  <ListItem>
-                    <Heading
-                      fontSize={['2xl', headingFontSize]}
-                      textAlign="left"
-                    >
-                      Marilene Brusco
-                    </Heading>
-                  </ListItem>
-                  <ListItem>
-                    <Heading
-                      fontSize={['2xl', headingFontSize]}
-                      fontWeight="thin"
-                      textAlign="left"
-                    >
-                      Azevedo Advogados
-                    </Heading>
-                  </ListItem>
+          <TestimonialBox
+            testimonialAuthor="Marilene Brusco"
+            testimonialCompany="Azevedo Advogados"
+            testimonialText="Profissionais competentes e Confiáveis, ótimo atendimento aos clientes"
+          />
 
-                  <ListItem>
-                    <Text
-                      fontSize={['2xl', 'xl']}
-                      fontWeight="normal"
-                      textAlign="left"
-                    >
-                      Profissionais competentes e Confiáveis, ótimo atendimento
-                      aos clientes
-                    </Text>
-                  </ListItem>
-                </List>
-              </Box>
-            </Flex>
-            <Flex flex="1"></Flex>
-          </Flex>
-          <Flex>
-            <Flex flex="1"></Flex>
-            <Flex marginTop={10} flex={['12', '2']}>
-              <Box
-                backgroundColor="blue.500"
-                borderRadius="lg"
-                color="white"
-                paddingX={paddingTop}
-                paddingY={paddingTop}
-                marginRight={6}
-              >
-                <List spacing={listSpacing} alignItems={alignmentStatement}>
-                  <ListItem>
-                    <Heading
-                      fontSize={['2xl', headingFontSize]}
-                      textAlign="left"
-                    >
-                      Lúcia Rockembach
-                    </Heading>
-                  </ListItem>
-                  <ListItem>
-                    <Heading
-                      fontSize={['2xl', headingFontSize]}
-                      fontWeight="thin"
-                      textAlign="left"
-                    >
-                      Vidal Falcão Advocacia Empresarial
-                    </Heading>
-                  </ListItem>
+          <TestimonialBox
+            testimonialAuthor="Lúcia Rockembach"
+            testimonialCompany="Vidal Falcão Advocacia Empresarial"
+            testimonialText="Sinônimo de confiança, presteza, muita discrição no ambiente de trabalho e o atendimento personalizado"
+            alignment="right"
+          />
 
-                  <ListItem>
-                    <Text
-                      fontSize={['2xl', 'xl']}
-                      fontWeight="normal"
-                      textAlign="left"
-                    >
-                      Sinônimo de confiança, presteza, muita discrição no
-                      ambiente de trabalho e o atendimento personalizado
-                    </Text>
-                  </ListItem>
-                </List>
-              </Box>
-              <Avatar
-                name=""
-                src="https://thispersondoesnotexist.com/image"
-                size="xl"
-                marginTop={8}
-              />
-            </Flex>
-          </Flex>
-
-          <Flex>
-            <Flex marginTop={10} flex={['12', '2']}>
-              <Avatar
-                name=""
-                src="https://thispersondoesnotexist.com/image"
-                size="xl"
-                marginTop={8}
-              />
-              <Box
-                backgroundColor="blue.500"
-                borderRadius="lg"
-                color="white"
-                paddingX={paddingTop}
-                paddingY={paddingTop}
-                marginLeft={6}
-              >
-                <List spacing={listSpacing} alignItems={alignmentStatement}>
-                  <ListItem>
-                    <Heading
-                      fontSize={['2xl', headingFontSize]}
-                      textAlign="left"
-                    >
-                      Yamara Eichner
-                    </Heading>
-                  </ListItem>
-                  <ListItem>
-                    <Heading
-                      fontSize={['2xl', headingFontSize]}
-                      fontWeight="thin"
-                      textAlign="left"
-                    >
-                      Naturoils
-                    </Heading>
-                  </ListItem>
-
-                  <ListItem>
-                    <Text
-                      fontSize={['2xl', 'xl']}
-                      fontWeight="normal"
-                      textAlign="left"
-                    >
-                      Atendimento personalizado, suporte rápido e eficiente,
-                      discrição e confiabilidade em projetos customizados
-                    </Text>
-                  </ListItem>
-                </List>
-              </Box>
-            </Flex>
-
-            <Flex flex="1"></Flex>
-          </Flex>
+          <TestimonialBox
+            testimonialAuthor="Yamara Eichner"
+            testimonialCompany="Naturoils"
+            testimonialText="Atendimento personalizado, suporte rápido e eficiente, discrição e confiabilidade em projetos customizados"
+          />
         </Box>
-      </Flex>
+      </ContentSection>
     </Flex>
   )
 }
