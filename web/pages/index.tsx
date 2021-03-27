@@ -1,9 +1,10 @@
 // eslint-disable-next-line no-use-before-define
 
-import { Box, Flex, Heading, Text } from '@chakra-ui/core'
+import { Box, Flex, Heading, List, ListItem, Text } from '@chakra-ui/core'
 
 import ActionButton from '../components/ActionButton'
 import ContentSection from '../components/ContentSection'
+import ServiceItem from '../components/ServiceItem'
 import TestimonialBox from '../components/TestimonialBox'
 
 export default function Home(): JSX.Element {
@@ -11,7 +12,7 @@ export default function Home(): JSX.Element {
     <Flex direction="column" width="100%">
       <ContentSection>
         <Heading marginBottom={6} fontSize={['6xl', '4xl']}>
-          Gestão de Tecnologia da Informação
+          Outsourcing em Tecnologia da Informação
         </Heading>
         <Heading fontSize={['2xl', 'xl']} fontWeight="normal" marginBottom={6}>
           Somos uma empresa que transforma o ambiente de tecnologia em
@@ -64,6 +65,14 @@ export default function Home(): JSX.Element {
           Somos uma empresa que transforma o ambiente de tecnologia em uma
           ferramenta de potencialização de resultados dos nossos clientes
         </Heading>
+        <Flex>
+          <ServiceItem title="Monitoramento " />
+          <ServiceItem title="Manutenção Preventiva " />
+          <ServiceItem title="Manutenção Corretiva " />
+          <ServiceItem title="Serviços Gerenciados " />
+          <ServiceItem title="Consultoria em TI " />
+          <ServiceItem title="VPN " />
+        </Flex>
       </ContentSection>
       <ContentSection
         alignment="center"
