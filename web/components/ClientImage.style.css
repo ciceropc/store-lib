@@ -10,3 +10,8 @@
     -webkit-filter: hue-rotate(90deg) brightness(70%) grayscale(100%);
           filter: hue-rotate(90deg) brightness(70%) grayscale(100%);
 }
+.gray-scale {
+
+    -webkit-filter: hue-rotate(90deg) grayscale(100%);
+          filter: hue-rotate(90deg) grayscale(100%);
+}

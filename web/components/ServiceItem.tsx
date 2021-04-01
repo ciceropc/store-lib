@@ -30,7 +30,8 @@ export default function ServicesItem(
         _hover={{
           backgroundColor: hoverBackgroundColor,
           color: hoverColor,
-          fill: hoverFillColor
+          fill: hoverFillColor,
+          cursor: 'initial'
         }}
         backgroundColor={backgroundColor}
         color={color}
@@ -38,33 +39,39 @@ export default function ServicesItem(
         borderRadius="md"
         height={height}
         width={width}
-        href="/services"
+        href={null}
       >
         <Flex paddingX={6} paddingY={6} direction="column">
-          <Grid templateRows="55px 15px 1fr 20px" height={size * 0.65 + 'px'}>
-            <Flex flex="1">
-              <Flex flex="1"></Flex>
-              {props.children}
-              <Flex flex="1"></Flex>
+          <Grid templateRows="1fr 95px 1fr" height={size * 0.65 + 'px'}>
+            <Flex flex="1"> </Flex>
+            <Flex flex="1" direction="column">
+              <Flex>
+                <Flex flex="1"></Flex>
+                {props.children}
+                <Flex flex="1"></Flex>
+              </Flex>
+              <Flex direction="column">
+                <Heading
+                  fontSize={fontSize}
+                  marginTop={6}
+                  fontWeight="bold"
+                  textTransform="uppercase"
+                  textAlign="center"
+                >
+                  {props.title}
+                </Heading>
+              </Flex>
             </Flex>
-            <Heading
-              fontSize={fontSize}
-              marginTop={6}
-              fontWeight="bold"
-              textTransform="uppercase"
-              textAlign="center"
-            >
-              {props.title}
-            </Heading>
-            <Flex> </Flex>
-            <Text
+
+            <Flex flex="1"></Flex>
+            {/* <Text
               marginTop={6}
               textAlign="center"
               fontWeight="regular"
               backgroundColor={hoverFillColor}
             >
               Saiba mais
-            </Text>
+            </Text> */}
           </Grid>
         </Flex>
       </Link>

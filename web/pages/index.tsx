@@ -74,7 +74,7 @@ export default function Home(): JSX.Element {
           gap={6}
           marginTop={6}
         >
-          <ServiceItem title="Monitoramento" description="Hasuhusahushauhah">
+          <ServiceItem title="Monitoramento">
             <AnalyticsIcon size={iconSize} />
           </ServiceItem>
           <ServiceItem title="Manutenção Preventiva">
@@ -115,13 +115,19 @@ export default function Home(): JSX.Element {
           gap={6}
           marginTop={[8, 12]}
         >
-          <ClientImage src="/images/azevedo-advogados.png" />
-          <ClientImage src="/images/becker-pack.png" />
-          <ClientImage src="/images/isaclin.png" />
-          <ClientImage src="/images/wizard.png" />
-          <ClientImage src="/images/cuento-coworking.png" />
+          <ClientImage
+            src="/images/azevedo-advogados.png"
+            className="gray-scale"
+          />
+          <ClientImage src="/images/becker-pack.png" className="gray-scale" />
+          <ClientImage src="/images/isaclin.png" className="gray-scale" />
+          <ClientImage src="/images/wizard.png" className="gray-scale" />
+          <ClientImage
+            src="/images/cuento-coworking.png"
+            className="gray-scale"
+          />
           <ClientImage src="/images/rockfeller.png" className="gray-500" />
-          <ClientImage src="/images/jj.png" />
+          <ClientImage src="/images/jj.png" className="gray-scale" />
           <ClientImage src="/images/vidal-falcao.png" className="gray-300" />
           <ClientImage src="/images/ecoa.png" className="gray-900" />
         </Grid>
