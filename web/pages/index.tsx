@@ -52,7 +52,7 @@ export default function Home(): JSX.Element {
         color="black"
         direction={['column', 'row']}
       >
-        <Box marginRight={20}>
+        <Box marginRight={[0, 20]}>
           <Heading
             marginBottom={6}
             fontSize={['6xl', '4xl']}
@@ -69,7 +69,11 @@ export default function Home(): JSX.Element {
             potencializa os seus resultados
           </Heading>
         </Box>
-        <Grid templateColumns="repeat(3, 1fr)" gap={6} marginTop={6}>
+        <Grid
+          templateColumns={['repeat(2, 1fr)', 'repeat(3, 1fr)']}
+          gap={6}
+          marginTop={6}
+        >
           <ServiceItem title="Monitoramento" description="Hasuhusahushauhah">
             <AnalyticsIcon size={iconSize} />
           </ServiceItem>
@@ -108,7 +112,11 @@ export default function Home(): JSX.Element {
         >
           Nossos clientes
         </Heading>
-        <Grid templateColumns="repeat(3, 1fr)" gap={6} marginTop={[8, 12]}>
+        <Grid
+          templateColumns={['repeat(2, 1fr)', 'repeat(3, 1fr)']}
+          gap={6}
+          marginTop={[8, 12]}
+        >
           <ClientImage src="/images/azevedo-advogados.png" />
           <ClientImage src="/images/becker-pack.png" />
           <ClientImage src="/images/isaclin.png" />
