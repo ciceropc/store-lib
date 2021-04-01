@@ -56,12 +56,19 @@ export default function Footer({ gridArea }): JSX.Element {
       <Flex flex="1" direction="column">
         <List spacing={listSpacing} paddingTop={[6, 0]}>
           <ListItem>
-            <Link href="contact">
-              <Heading fontSize={headingFontSize}>Contato</Heading>
+            <Heading fontSize={headingFontSize}>Contato</Heading>
+          </ListItem>
+          <ListItem>
+            <Link href="mailto:contato@infoassist.com.br?subject=Olá!%20Gostaria%20de%20...">
+              contato@infoassist.com.br
             </Link>
           </ListItem>
-          <ListItem>contato@infoassist.com.br</ListItem>
           <ListItem>(51) 98049-7131</ListItem>
+          <ListItem>
+            <Link href="http://contato.infoassist.com.br">
+              Agende uma consultoria
+            </Link>
+          </ListItem>
         </List>
         <List spacing={listSpacing} paddingTop={paddingTop}>
           <ListItem>

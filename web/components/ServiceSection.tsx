@@ -21,7 +21,6 @@ export default function ServiceSection(
     props.backgroundColorDefault ?? 'blackAlpha.800'
   const backgroundAlignment = props.backgroundAlignment ?? 'center'
   const backgroundHeight = props.backgroundHeight ?? '250px'
-  const backgroundWidth = props.backgroundWidth ?? '100%'
   const borderRadius = props.borderRadius ?? 'md'
 
   return (

@@ -32,6 +32,7 @@ export default function MainMenu({ gridArea }): JSX.Element {
         flex="1"
         verticalAlign="center"
       >
+        <Flex flex={['0', '0', '1', '1', '1']}></Flex>
         {/* <MenuButton
           destination="/services"
           fontSize={['xl', 'md']}

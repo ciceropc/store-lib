@@ -18,11 +18,11 @@ export default function ServicesItem(
   const color = props.color ?? 'gray.800'
   const fill = props.color ?? 'blue.300'
   const fontSize = props.fontSize ?? ''
-  const hoverColor = props.hoverColor ?? 'gray.800'
-  const hoverFillColor = props.hoverColor ?? 'orange.500'
-  const hoverBackgroundColor = props.hoverBackgroundColor ?? 'yellow.500'
+  const hoverColor = props.hoverColor ?? 'gray.50'
+  const hoverFillColor = props.hoverColor ?? 'white'
+  const hoverBackgroundColor = props.hoverBackgroundColor ?? 'green.500'
   const height = size + 'px'
-  const linkColor = props.color ?? 'orange.500'
+  // const linkColor = props.color ?? 'green.500'
   const width = size + 'px'
   return (
     <Flex>
@@ -61,7 +61,6 @@ export default function ServicesItem(
               marginTop={6}
               textAlign="center"
               fontWeight="regular"
-              color={linkColor}
               backgroundColor={hoverFillColor}
             >
               Saiba mais
