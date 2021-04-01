@@ -55,7 +55,7 @@ export default function TestimonialBox(
     <Flex>
       <Flex flex={flexLeft}></Flex>
       <Flex flex={flexContent}>
-        {avatarOnLeft}
+        {/* {avatarOnLeft} */}
         <Box
           backgroundColor={backgroundColor}
           borderRadius="lg"
@@ -93,7 +93,7 @@ export default function TestimonialBox(
             </ListItem>
           </List>
         </Box>
-        {avatarOnRight}
+        {/* {avatarOnRight} */}
       </Flex>
       <Flex flex={flexRight}></Flex>
     </Flex>

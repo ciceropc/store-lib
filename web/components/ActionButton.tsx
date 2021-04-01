@@ -9,6 +9,7 @@ interface ActionButtonParameters {
   hoverBackgroundColor?: string
   hoverColor?: string
   text?: string
+  target?: string
 }
 
 export default function ActionButton(
@@ -23,6 +24,7 @@ export default function ActionButton(
   const fontSize = props.fontSize ?? ''
   const hoverColor = props.hoverColor ?? 'white'
   const hoverBackgroundColor = props.hoverBackgroundColor ?? 'green.500'
+  const target = props.target
   return (
     <Flex paddingY={6}>
       <Link
@@ -41,6 +43,7 @@ export default function ActionButton(
         paddingY={4}
         textTransform="uppercase"
         whiteSpace="nowrap"
+        target={target}
       >
         {props.text}
         {iconData}

@@ -10,6 +10,7 @@ interface MenuButtonParameters {
   hoverBackgroundColor?: string
   hoverColor?: string
   text?: string
+  target?: string
 }
 export default function MenuButton(props: MenuButtonParameters): JSX.Element {
   function teste() {
@@ -21,6 +22,7 @@ export default function MenuButton(props: MenuButtonParameters): JSX.Element {
   const fontWeight = props.fontWeight ?? 'bold'
   const hoverBackgroundColor = props.hoverBackgroundColor ?? ''
   const hoverColor = props.hoverColor ?? 'white'
+  const target = props.target
   return (
     <Flex paddingTop={10} paddingBottom={6}>
       <Link
@@ -38,6 +40,7 @@ export default function MenuButton(props: MenuButtonParameters): JSX.Element {
         overflow="hidden"
         paddingTop={6}
         paddingX={4}
+        target={target}
         textTransform="uppercase"
         whiteSpace="nowrap"
       >

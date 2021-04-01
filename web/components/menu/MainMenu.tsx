@@ -47,6 +47,7 @@ export default function MainMenu({ gridArea }): JSX.Element {
           destination="http://contact.infoassist.com.br"
           fontSize={['xl', 'md']}
           text="Contato"
+          target="_blank"
         />
         <ActionButton
           destination="http://remoto.infoassist.com.br/"

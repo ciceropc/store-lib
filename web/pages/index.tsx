@@ -36,6 +36,7 @@ export default function Home(): JSX.Element {
           destination="http://contact.infoassist.com.br"
           fontSize={['xl', 'md']}
           text="Agende uma consultoria"
+          target="_blank"
         />
       </ContentSection>
 
