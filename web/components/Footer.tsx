@@ -39,9 +39,7 @@ export default function Footer({ gridArea }): JSX.Element {
       <Flex flex={['1', '2']} direction="column">
         <List spacing={listSpacing} paddingTop={[6, 0]}>
           <ListItem>
-            <Link href="services">
-              <Heading fontSize={headingFontSize}>Serviços Oferecidos</Heading>
-            </Link>
+            <Heading fontSize={headingFontSize}>Serviços Oferecidos</Heading>
           </ListItem>
           <ListItem>Consultoria de Tecnologia</ListItem>
           <ListItem>Prestação de serviços de TI </ListItem>
