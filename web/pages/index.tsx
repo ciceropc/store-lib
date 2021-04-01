@@ -9,18 +9,11 @@ import ServiceItem from '../components/ServiceItem'
 import TestimonialBox from '../components/TestimonialBox'
 
 import {
-  AdviceIcon,
   AnalyticsIcon,
   CertificateIcon,
-  CoachingIcon,
   ComputerIcon,
-  DatabaseIcon,
-  ElearningIcon,
-  GoalIcon,
   ListIcon,
   PuzzleIcon,
-  QuestionIcon,
-  SupportIcon,
   TrustIcon
 } from '../assets/Icons'
 import Utils from '../utils/components_utils'
@@ -40,7 +33,7 @@ export default function Home(): JSX.Element {
         <ActionButton
           backgroundColor="yellow.500"
           color="gray.800"
-          destination="http://contato.infoassist.com.br"
+          destination="http://contact.infoassist.com.br"
           fontSize={['xl', 'md']}
           text="Agende uma consultoria"
         />

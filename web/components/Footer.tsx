@@ -65,7 +65,7 @@ export default function Footer({ gridArea }): JSX.Element {
           </ListItem>
           <ListItem>(51) 98049-7131</ListItem>
           <ListItem>
-            <Link href="http://contato.infoassist.com.br">
+            <Link href="http://contact.infoassist.com.br">
               Agende uma consultoria
             </Link>
           </ListItem>

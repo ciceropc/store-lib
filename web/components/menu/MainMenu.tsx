@@ -44,7 +44,7 @@ export default function MainMenu({ gridArea }): JSX.Element {
           text="Quem somos nós?"
         /> */}
         <MenuButton
-          destination="http://contato.infoassist.com.br"
+          destination="http://contact.infoassist.com.br"
           fontSize={['xl', 'md']}
           text="Contato"
         />
