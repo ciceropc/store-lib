@@ -20,8 +20,12 @@
   },
   "include": [
     "next-env.d.ts",
+    ".env.local",
+    ".babelrc",
+    "**/*.ts",
     "**/*.ts",
     "**/*.tsx"
+
 , "pages/_app.tsx"  ],
   "exclude": [
     "node_modules"

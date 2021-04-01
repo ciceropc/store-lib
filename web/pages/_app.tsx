@@ -1,14 +1,17 @@
-import Head from 'next/head'
+import ThemeContainer from '../contexts/theme/ThemeContainer'
+
+import { Flex, Grid, Heading } from '@chakra-ui/core'
+import MainMenu from '../components/menu/MainMenu'
+import Footer from '../components/Footer'
+import Utils from '../utils/components_utils'
 
 import * as gtag from '../lib/gtag'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
-import { GA_TRACKING_ID } from '../lib/gtag'
+import '../components/ClientImage.style.css'
 
-import '../styles/globals.css'
-import styles from '../styles/Home.module.css'
-
-const App = ({ Component, pageProps }) => {
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+export default function App({ Component, pageProps, props }): JSX.Element {
   const router = useRouter()
   useEffect(() => {
     const handleRouteChange = url => {
@@ -20,51 +23,41 @@ const App = ({ Component, pageProps }) => {
     }
   }, [router.events])
   return (
-    <>
-      <Head>
-        <title>InfoAssist</title>
-        <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="author"
-          content="Cícero Pereira Costa, Fernado Donini Ramos"
-        />
-        <meta
-          name="description"
-          content="Suporte Técnico em Informática em Porto Alegre"
-        />
-        <meta
-          name="keywords"
-          content="suporte, TI, assistência, tecnologia, informática, técnico, conserto, computador, redes, Porto Alegre"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta charSet="utf-8" />
-        <link rel="icon" href="/favicon.ico" />
-
-        {/* Global Site Tag (gtag.js) - Google Analytics */}
-        <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_TRACKING_ID}', {
-              page_path: window.location.pathname,
-            });
-          `
-          }}
-        />
-      </Head>
-      <Component {...pageProps} />
-
-      <footer className={styles.footer}>
-        <a>&reg; InfoTech 2021</a>
-      </footer>
-    </>
+    <ThemeContainer>
+      <Grid
+        as="main"
+        backgroundColor="white"
+        fontFamily="body"
+        templateColumns="1fr"
+        templateRows={['650px 1fr 740px', '105px 1fr 280px']}
+        templateAreas="
+          'MainMenu'
+          'Content'
+          'Footer'
+        "
+      >
+        <MainMenu gridArea="MainMenu" />
+        <Flex gridArea="Content" flex="1" width={Utils.defaultResponsiveWidth}>
+          <Heading>{props?.posts} </Heading>
+          <Component {...pageProps} />
+        </Flex>
+        <Footer gridArea="Footer" />
+      </Grid>
+    </ThemeContainer>
   )
 }
 
-export default App
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+export const getServerSideProps = async () => {
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  const client = require('contentful').createClient({
+    space: process.env.CONTENTFUL_SPACE,
+    accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
+  })
+  const data = await client.getEntries({ content_type: 'post' })
+  return {
+    props: {
+      posts: data.items
+    }
+  }
+}

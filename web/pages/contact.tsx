@@ -1,31 +1,47 @@
 // eslint-disable-next-line no-use-before-define
-import React from 'react'
 
-const Contact: React.FC = () => {
-  const registerUser = async event => {
-    event.preventDefault()
+import { Button, Flex, Grid, Input, Text, Textarea } from '@chakra-ui/core'
 
-    const res = await fetch('/api/register', {
-      body: JSON.stringify({
-        name: event.target.name.value
-      }),
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      method: 'POST'
-    })
+import ContentSection from '../components/ContentSection'
 
-    const result = await res.json()
-    // result.user => 'Ada Lovelace'
-  }
-
+export default function Contact(): JSX.Element {
   return (
-    <form onSubmit={registerUser}>
-      <label htmlFor="name">Name</label>
-      <input id="name" name="name" type="text" autoComplete="name" required />
-      <button type="submit">Register</button>
-    </form>
+    <ContentSection
+      alignment="left"
+      backgroundColor="white"
+      color="black"
+      title="Fale conosco"
+    >
+      <Flex>
+        <Text textAlign="justify" paddingY="8" lineHeight="2">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+          fermentum lorem vitae lacus congue, id pretium orci pretium. Cras at
+          congue justo. Morbi laoreet orci vitae cursus commodo. Suspendisse
+          potenti. Vestibulum maximus pulvinar purus at vehicula. Duis quis
+          massa eu massa tincidunt luctus vitae sit amet turpis. Duis aliquam
+          dolor lacinia ex eleifend ullamcorper. Curabitur sed accumsan neque,
+          in vestibulum odio. Integer gravida mi nibh, id congue libero pretium
+          nec. Curabitur dictum enim eget felis pretium vulputate. Quisque
+          lectus quam, congue eu lacus
+        </Text>
+        <Flex marginLeft="16">
+          <Flex flex="1"></Flex>
+          <Grid paddingY="8" height="300px" width="420px">
+            <Input placeholder="Nome" />
+            <Input placeholder="Telefona para contato" />
+            <Textarea placeholder="Em que podemos ajudar?" resize="none" />
+            <Button
+              backgroundColor="green.500"
+              color="white"
+              _hover={{ backgroundColor: 'green.400' }}
+              marginTop="2"
+            >
+              Enviar
+            </Button>
+          </Grid>
+          <Flex flex="1"></Flex>
+        </Flex>
+      </Flex>
+    </ContentSection>
   )
 }
-
-export default Contact
