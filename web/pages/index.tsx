@@ -1,13 +1,30 @@
 // eslint-disable-next-line no-use-before-define
 
-import { Box, Flex, Heading, List, ListItem, Text } from '@chakra-ui/core'
+import { Box, Flex, Grid, Heading } from '@chakra-ui/core'
 
 import ActionButton from '../components/ActionButton'
 import ContentSection from '../components/ContentSection'
 import ServiceItem from '../components/ServiceItem'
 import TestimonialBox from '../components/TestimonialBox'
 
+import {
+  AdviceIcon,
+  AnalyticsIcon,
+  CertificateIcon,
+  CoachingIcon,
+  ComputerIcon,
+  DatabaseIcon,
+  ElearningIcon,
+  GoalIcon,
+  ListIcon,
+  PuzzleIcon,
+  QuestionIcon,
+  SupportIcon,
+  TrustIcon
+} from '../assets/Icons'
+
 export default function Home(): JSX.Element {
+  const iconSize = '55'
   return (
     <Flex direction="column" width="100%">
       <ContentSection>
@@ -40,17 +57,9 @@ export default function Home(): JSX.Element {
           textAlign={['center', 'right']}
           width={['100%', '2xl']}
         >
-          Como fazemos isso?
+          Nossos clientes
         </Heading>
-        <Text
-          textAlign={['center', 'left']}
-          fontSize={['2xl', 'xl']}
-          marginTop={2}
-        >
-          Reduzindo ao máximo os problemas com análise de infraestrutura,
-          padronização de hardware e software, e monitoramento em tempo real dos
-          recursos físicos dos equipamentos
-        </Text>
+        <Box></Box>
       </ContentSection>
       <ContentSection
         alignment="center"
@@ -62,17 +71,29 @@ export default function Home(): JSX.Element {
           O que oferecemos
         </Heading>
         <Heading fontSize={['2xl', 'xl']} fontWeight="normal">
-          Somos uma empresa que transforma o ambiente de tecnologia em uma
-          ferramenta de potencialização de resultados dos nossos clientes
+          Nós transformamos o seu ambiente de tecnologia em uma ferramenta de
+          potencialização de resultados dos nossos clientes
         </Heading>
-        <Flex>
-          <ServiceItem title="Monitoramento " />
-          <ServiceItem title="Manutenção Preventiva " />
-          <ServiceItem title="Manutenção Corretiva " />
-          <ServiceItem title="Serviços Gerenciados " />
-          <ServiceItem title="Consultoria em TI " />
-          <ServiceItem title="VPN " />
-        </Flex>
+        <Grid templateColumns="repeat(3, 1fr)" gap={6} marginTop={6}>
+          <ServiceItem title="Monitoramento" description="Hasuhusahushauhah">
+            <AnalyticsIcon size={iconSize} />
+          </ServiceItem>
+          <ServiceItem title="Manutenção Preventiva">
+            <ComputerIcon size={iconSize} />
+          </ServiceItem>
+          <ServiceItem title="Manutenção Corretiva">
+            <PuzzleIcon size={iconSize} />
+          </ServiceItem>
+          <ServiceItem title="Serviços Gerenciados">
+            <ListIcon size={iconSize} />
+          </ServiceItem>
+          <ServiceItem title="Consultoria em TI">
+            <CertificateIcon size={iconSize} />
+          </ServiceItem>
+          <ServiceItem title="VPN">
+            <TrustIcon size={iconSize} />
+          </ServiceItem>
+        </Grid>
       </ContentSection>
       <ContentSection
         alignment="center"
