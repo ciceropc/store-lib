@@ -43,37 +43,30 @@ export default function Home(): JSX.Element {
           text="Agende uma consultoria"
         />
       </ContentSection>
+
       <ContentSection
         alignment="center"
-        backgroundColor="white.500"
+        backgroundColor="gray.50"
         color="black"
         direction={['column', 'row']}
       >
-        <Heading
-          paddingLeft={[0, 6]}
-          marginRight={6}
-          marginBottom={[6, 0]}
-          fontSize={['6xl', '4xl']}
-          textAlign={['center', 'right']}
-          width={['100%', '2xl']}
-        >
-          Nossos clientes
-        </Heading>
-        <Box></Box>
-      </ContentSection>
-      <ContentSection
-        alignment="center"
-        backgroundColor="gray.100"
-        color="black"
-        direction="column"
-      >
-        <Heading marginBottom={6} fontSize={['6xl', '4xl']}>
-          O que oferecemos
-        </Heading>
-        <Heading fontSize={['2xl', 'xl']} fontWeight="normal">
-          Nós transformamos o seu ambiente de tecnologia em uma ferramenta de
-          potencialização de resultados dos nossos clientes
-        </Heading>
+        <Box marginRight={20}>
+          <Heading
+            marginBottom={6}
+            fontSize={['6xl', '4xl']}
+            textAlign={['center', 'right']}
+          >
+            O que oferecemos
+          </Heading>
+          <Heading
+            fontSize={['2xl', 'xl']}
+            fontWeight="normal"
+            textAlign={['center', 'justify']}
+          >
+            Nós transformamos o seu ambiente de tecnologia em uma ferramenta que
+            potencializa os seus resultados
+          </Heading>
+        </Box>
         <Grid templateColumns="repeat(3, 1fr)" gap={6} marginTop={6}>
           <ServiceItem title="Monitoramento" description="Hasuhusahushauhah">
             <AnalyticsIcon size={iconSize} />
@@ -94,6 +87,24 @@ export default function Home(): JSX.Element {
             <TrustIcon size={iconSize} />
           </ServiceItem>
         </Grid>
+      </ContentSection>
+      <ContentSection
+        alignment="center"
+        backgroundColor="white.500"
+        color="black"
+        direction="column"
+      >
+        <Heading
+          paddingLeft={[0, 6]}
+          marginRight={6}
+          marginBottom={[6, 0]}
+          fontSize={['6xl', '4xl']}
+          textAlign={['center', 'right']}
+          width={['100%', '2xl']}
+        >
+          Nossos clientes
+        </Heading>
+        <Box></Box>
       </ContentSection>
       <ContentSection
         alignment="center"
