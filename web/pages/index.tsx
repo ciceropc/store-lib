@@ -1,8 +1,9 @@
 // eslint-disable-next-line no-use-before-define
 
-import { Box, Flex, Grid, Heading } from '@chakra-ui/core'
+import { Box, Flex, Grid, Divider, Heading } from '@chakra-ui/core'
 
 import ActionButton from '../components/ActionButton'
+import ClientImage from '../components/ClientImage'
 import ContentSection from '../components/ContentSection'
 import ServiceItem from '../components/ServiceItem'
 import TestimonialBox from '../components/TestimonialBox'
@@ -22,6 +23,7 @@ import {
   SupportIcon,
   TrustIcon
 } from '../assets/Icons'
+import Utils from '../utils/components_utils'
 
 export default function Home(): JSX.Element {
   const iconSize = '55'
@@ -46,7 +48,7 @@ export default function Home(): JSX.Element {
 
       <ContentSection
         alignment="center"
-        backgroundColor="gray.50"
+        backgroundColor="white"
         color="black"
         direction={['column', 'row']}
       >
@@ -88,9 +90,12 @@ export default function Home(): JSX.Element {
           </ServiceItem>
         </Grid>
       </ContentSection>
+      <Box backgroundColor="white" paddingX={Utils.defaultPaddingX}>
+        <Divider />
+      </Box>
       <ContentSection
         alignment="center"
-        backgroundColor="white.500"
+        backgroundColor="white"
         color="black"
         direction="column"
       >
@@ -99,12 +104,21 @@ export default function Home(): JSX.Element {
           marginRight={6}
           marginBottom={[6, 0]}
           fontSize={['6xl', '4xl']}
-          textAlign={['center', 'right']}
-          width={['100%', '2xl']}
+          textAlign="center"
         >
           Nossos clientes
         </Heading>
-        <Box></Box>
+        <Grid templateColumns="repeat(3, 1fr)" gap={6} marginTop={[8, 12]}>
+          <ClientImage src="/images/azevedo-advogados.png" />
+          <ClientImage src="/images/becker-pack.png" />
+          <ClientImage src="/images/isaclin.png" />
+          <ClientImage src="/images/wizard.png" />
+          <ClientImage src="/images/cuento-coworking.png" />
+          <ClientImage src="/images/rockfeller.png" className="gray-500" />
+          <ClientImage src="/images/jj.png" />
+          <ClientImage src="/images/vidal-falcao.png" className="gray-300" />
+          <ClientImage src="/images/ecoa.png" className="gray-900" />
+        </Grid>
       </ContentSection>
       <ContentSection
         alignment="center"

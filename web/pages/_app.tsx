@@ -4,6 +4,8 @@ import { Flex, Grid, Heading } from '@chakra-ui/core'
 import MainMenu from '../components/menu/MainMenu'
 import Footer from '../components/Footer'
 import Utils from '../utils/components_utils'
+import '../components/ClientImage.style.css'
+
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export default function App({ Component, pageProps, props }): JSX.Element {
   return (
