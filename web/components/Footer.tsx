@@ -26,13 +26,13 @@ export default function Footer({ gridArea }): JSX.Element {
             </Link>
           </ListItem>
         </List>
-        <List spacing={listSpacing} paddingTop={paddingTop}>
+        {/* <List spacing={listSpacing} paddingTop={paddingTop}>
           <ListItem>
             <Link href="about">
               <Heading fontSize={headingFontSize}>Quem Somos Nós?</Heading>
             </Link>
           </ListItem>
-        </List>
+        </List> */}
       </Flex>
 
       <Flex flex={['0', '1']}></Flex>

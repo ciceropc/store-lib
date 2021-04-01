@@ -40,7 +40,7 @@ export default function Home(): JSX.Element {
         <ActionButton
           backgroundColor="yellow.500"
           color="gray.800"
-          destination="http://www.google.com.br"
+          destination="http://contato.infoassist.com.br"
           fontSize={['xl', 'md']}
           text="Agende uma consultoria"
         />
@@ -104,8 +104,6 @@ export default function Home(): JSX.Element {
         direction="column"
       >
         <Heading
-          paddingLeft={[0, 6]}
-          marginRight={6}
           marginBottom={[6, 0]}
           fontSize={['6xl', '4xl']}
           textAlign="center"

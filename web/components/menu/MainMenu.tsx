@@ -13,6 +13,7 @@ export default function MainMenu({ gridArea }): JSX.Element {
       direction={['column', 'row']}
       gridArea={gridArea}
       paddingX={Utils.defaultPaddingX}
+      paddingY={[12, 0]}
       position={['unset', 'sticky']}
       top={0}
       transition="height .5s, line-height .5s"
@@ -31,18 +32,18 @@ export default function MainMenu({ gridArea }): JSX.Element {
         flex="1"
         verticalAlign="center"
       >
-        <MenuButton
+        {/* <MenuButton
           destination="/services"
           fontSize={['xl', 'md']}
           text="Serviços oferecidos"
-        />
-        <MenuButton
+        /> */}
+        {/* <MenuButton
           destination="/about"
           fontSize={['xl', 'md']}
           text="Quem somos nós?"
-        />
+        /> */}
         <MenuButton
-          destination="/contact"
+          destination="http://contato.infoassist.com.br"
           fontSize={['xl', 'md']}
           text="Contato"
         />
