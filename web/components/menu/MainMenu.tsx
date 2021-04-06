@@ -5,17 +5,16 @@ import MenuButton from '../../components/menu/MenuButton'
 import LogoSVG from '../../public/LogoSVG'
 import Utils from '../../utils/components_utils'
 
-export default function MainMenu({ gridArea }): JSX.Element {
+export default function MainMenu(): JSX.Element {
   return (
     <Flex
       alignItems={['center', 'auto']}
       backgroundColor="blue.500"
-      direction={['column', 'row']}
-      gridArea={gridArea}
+      direction={['row']}
       paddingX={Utils.defaultPaddingX}
-      paddingY={[12, 0]}
-      position={['unset', 'sticky']}
-      top={0}
+      paddingY={[0]}
+      position={['sticky']}
+      top={['calc(100% - 155px)', 0]}
       transition="height .5s, line-height .5s"
       zIndex={10}
       width={Utils.defaultResponsiveWidth}
@@ -25,14 +24,14 @@ export default function MainMenu({ gridArea }): JSX.Element {
           <LogoSVG color="white" size="75" />
         </Link>
       </Flex>
-      <Flex flex={['0', '1']}></Flex>
+      <Flex flex={['1']}></Flex>
       <Flex
-        alignItems={['center', 'unset']}
-        direction={['column', 'row']}
+        alignItems={['unset']}
+        direction={['row']}
         flex="1"
         verticalAlign="center"
       >
-        <Flex flex={['0', '0', '1', '1', '1']}></Flex>
+        <Flex flex={['1']}></Flex>
         {/* <MenuButton
           destination="/services"
           fontSize={['xl', 'md']}
