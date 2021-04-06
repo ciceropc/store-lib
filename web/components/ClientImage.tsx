@@ -21,7 +21,7 @@ export default function ClientImage(props: ClientImageParameters): JSX.Element {
         src={props.src}
         maxHeight={maxHeight}
         maxWidth={maxWidth}
-        objectFit="cover"
+        objectFit="contain"
         paddingX={8}
         paddingY={6}
         className={className}

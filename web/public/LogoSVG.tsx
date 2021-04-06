@@ -17,10 +17,10 @@ export default function LogoSVG({ color, size }) {
         </svg>
       </Flex>
       <Flex
-        height={size + 'px'}
+        height={[0, size + 'px']}
         paddingLeft="1"
-        width={size * 3 + 'px'}
-        paddingY="6"
+        width={[0, size * 3 + 'px']}
+        paddingY={['2', '6']}
       >
         <svg
           viewBox="-766.791 -2.517 1771.248 295.65"

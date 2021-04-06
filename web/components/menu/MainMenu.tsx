@@ -14,7 +14,7 @@ export default function MainMenu(): JSX.Element {
       paddingX={Utils.defaultPaddingX}
       paddingY={[0]}
       position={['sticky']}
-      top={['calc(100% - 155px)', 0]}
+      top={['calc(100% - 154px)', 0]}
       transition="height .5s, line-height .5s"
       zIndex={10}
       width={Utils.defaultResponsiveWidth}
