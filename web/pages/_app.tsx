@@ -29,15 +29,20 @@ export default function App({ Component, pageProps, props }): JSX.Element {
         backgroundColor="white"
         fontFamily="body"
         templateColumns="1fr"
-        templateRows={['650px 1fr 740px', '105px 1fr 280px']}
+        templateRows={['155px 1fr 740px', '105px 1fr 280px']}
         templateAreas="
           'MainMenu'
           'Content'
           'Footer'
         "
       >
-        <MainMenu gridArea="MainMenu" />
-        <Flex gridArea="Content" flex="1" width={Utils.defaultResponsiveWidth}>
+        <MainMenu />
+        <Flex
+          gridArea="Content"
+          flex="1"
+          width={Utils.defaultResponsiveWidth}
+          marginTop={['-155px', 0]}
+        >
           <Heading>{props?.posts} </Heading>
           <Component {...pageProps} />
         </Flex>
