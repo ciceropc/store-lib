@@ -1,4 +1,4 @@
-import { Box, Flex, Grid, Image, Link, Text } from '@chakra-ui/core'
+import { Flex, Image } from '@chakra-ui/core'
 interface ClientImageParameters {
   backgroundColor?: string
   color?: string
