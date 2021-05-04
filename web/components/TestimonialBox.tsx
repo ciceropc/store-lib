@@ -32,10 +32,10 @@ export default function TestimonialBox(
   const flexContent = ['12', '2']
   const flexLeft = alignment === 'left' ? '0' : '1'
   const flexRight = alignment === 'right' ? '0' : '1'
-  const headingFontSize = props.headingFontSize ?? 'md'
+  const headingFontSize = props.headingFontSize ?? 'lg'
   const imageSrc = props.imageSrc ?? 'https://thispersondoesnotexist.com/image'
   const listSpacing = props.listSpacing ?? '1'
-  const paddingTop = props.paddingTop ?? '6'
+  const paddingTop = props.paddingTop ?? '8'
   const textAlignment = 'left'
 
   let avatarOnLeft
@@ -76,6 +76,7 @@ export default function TestimonialBox(
               <Heading
                 fontSize={['2xl', headingFontSize]}
                 fontWeight="thin"
+                letterSpacing="wide"
                 textAlign={textAlignment}
               >
                 {props.testimonialCompany}

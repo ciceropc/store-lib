@@ -25,9 +25,12 @@ export default function App({ Component, pageProps, props }): JSX.Element {
   return (
     <ThemeContainer>
       <Grid
+        position="relative"
         as="main"
         backgroundColor="white"
         fontFamily="body"
+        letterSpacing="normal"
+        lineHeight="normal"
         templateColumns="1fr"
         templateRows={['155px 1fr 740px', '105px 1fr 280px']}
         templateAreas="

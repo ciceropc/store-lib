@@ -74,6 +74,20 @@ const infoAssistTheme: DefaultTheme = {
     medium: 400,
     bold: 700
   },
+  letterSpacings: {
+    ...theme.letterSpacings,
+    normal: '0.042em',
+    tight: '0.0042em',
+    tighter: '0.00042em',
+    wide: '0.1em',
+    wider: '0.11em',
+    widest: '0.12em'
+  },
+  lineHeights: {
+    ...theme.lineHeights,
+    base: '1.44em',
+    normal: '1.8em'
+  },
   radii: {
     ...theme.radii,
     sm: '5px',

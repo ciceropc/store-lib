@@ -7,6 +7,7 @@ import ClientImage from '../components/ClientImage'
 import ContentSection from '../components/ContentSection'
 import ServiceItem from '../components/ServiceItem'
 import TestimonialBox from '../components/TestimonialBox'
+import WhatsappButton from '../components/WhatsappButton'
 
 import {
   AnalyticsIcon,
@@ -22,8 +23,13 @@ export default function Home(): JSX.Element {
   const iconSize = '55'
   return (
     <Flex direction="column" width="100%">
+      <WhatsappButton text="Nos contate" />
       <ContentSection>
-        <Heading marginBottom={6} fontSize={['6xl', '4xl']}>
+        <Heading
+          marginBottom={6}
+          fontSize={['6xl', '4xl']}
+          letterSpacing="tight"
+        >
           Outsourcing em Tecnologia da Informação
         </Heading>
         <Heading fontSize={['2xl', 'xl']} fontWeight="normal" marginBottom={6}>
@@ -50,14 +56,14 @@ export default function Home(): JSX.Element {
           <Heading
             marginBottom={6}
             fontSize={['6xl', '4xl']}
-            textAlign={['center', 'right']}
+            textAlign={['center', 'left']}
           >
             O que oferecemos
           </Heading>
           <Heading
             fontSize={['2xl', 'xl']}
             fontWeight="normal"
-            textAlign={['center', 'justify']}
+            textAlign={['center', 'left']}
           >
             Nós transformamos o seu ambiente de tecnologia em uma ferramenta que
             potencializa os seus resultados
