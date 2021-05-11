@@ -16,7 +16,7 @@ class MyDocument extends Document<DocumentProps> {
           <title>InfoAssist</title>
           <meta
             name="keywords"
-            content="suporte, TI, assistência, tecnologia, informática, técnico, conserto, computador, redes, Porto Alegre"
+            content="suporte, TI, assistência, tecnologia, informática, técnico, conserto, computador, redes, Porto Alegre, Canoas, gestão, gerenciamento, "
           />
           <meta
             name="description"
