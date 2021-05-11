@@ -30,7 +30,7 @@ export default function Home(): JSX.Element {
           fontSize={['6xl', '4xl']}
           letterSpacing="tight"
         >
-          Outsourcing em Tecnologia da Informação
+          Gestão em Tecnologia da Informação
         </Heading>
         <Heading fontSize={['2xl', 'xl']} fontWeight="normal" marginBottom={6}>
           Somos uma empresa que transforma o ambiente de tecnologia em
