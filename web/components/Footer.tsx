@@ -13,7 +13,7 @@ export default function Footer({ gridArea }): JSX.Element {
       fontSize={['xl', 'sm']}
       gridArea={gridArea}
       paddingX={Utils.defaultPaddingX}
-      paddingY="8"
+      paddingY={12}
       color="gray.100"
       align="start"
       width={Utils.defaultResponsiveWidth}
