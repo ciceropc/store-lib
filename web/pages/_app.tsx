@@ -32,7 +32,7 @@ export default function App({ Component, pageProps, props }): JSX.Element {
         letterSpacing="normal"
         lineHeight="normal"
         templateColumns="1fr"
-        templateRows={['155px 1fr 740px', '105px 1fr 280px']}
+        templateRows={['155px 1fr 740px', '105px 1fr 334px']}
         templateAreas="
           'MainMenu'
           'Content'
