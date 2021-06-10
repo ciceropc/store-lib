@@ -49,7 +49,7 @@ export default function MainMenu(): JSX.Element {
           target="_blank"
         />
         <ActionButton
-          destination="http://remoto.infoassist.com.br/"
+          destination="https://remoto.infoassist.com.br/"
           fontSize={['xl', 'md']}
           text="Suporte Remoto"
         />
