@@ -21,7 +21,7 @@ export default function Footer({ gridArea }): JSX.Element {
       <Flex flex="1" direction="column">
         <List spacing={listSpacing}>
           <ListItem>
-            <Link href="http://remoto.infoassist.com.br/">
+            <Link href="https://remoto.infoassist.com.br/">
               <Heading fontSize={headingFontSize}>Suporte Remoto</Heading>
             </Link>
           </ListItem>
