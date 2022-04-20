@@ -61,7 +61,7 @@ export default function Footer({ gridArea }): JSX.Element {
               contato@infoassist.com.br
             </Link>
           </ListItem>
-          <ListItem>(51) 98049-7131</ListItem>
+          <ListItem>(51) 99466-2328</ListItem>
           <ListItem>
             <Link href="http://contact.infoassist.com.br" target="_blank">
               Agende uma consultoria
